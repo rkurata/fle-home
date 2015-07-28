@@ -130,11 +130,7 @@ p {
 }
 
 #bg-img {
-<<<<<<< HEAD
 	background-color: rgba(85, 118, 124, 0.8);
-=======
-	background-color: rgba(85, 118, 124, 0.84);
->>>>>>> started responsive fixes for images
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -280,5 +276,114 @@ p {
 @media (max-width: 620px) {
 	#bg-img p {
 		margin:5%;/*adding space btwn header and text*/
+	}
+}
+
+/*======Curate High Quality, Unique Courses section=========*/
+@media (max-width: 1000px){     /*keeping heading, picture, and paragraph centered*/
+	#feature-banner{
+		text-align: center;
+	}
+
+	#curate-img{
+		margin-left: 20%;
+	}
+
+	.col-md-8{
+		text-align: center;
+	}
+
+}
+
+@media (max-width: 650px){     /*keeping heading, picture, and paragraph centered*/
+	#feature-banner{
+		text-align: center;
+	}
+
+	#curate-img{
+		margin-left: 20%;
+	}
+
+	.col-md-8{
+		text-align: center;
+		font-size: 20px;
+	}
+
+}
+
+@media (max-width: 500px){     /*keeping heading, picture, and paragraph centered*/
+	#feature-banner{
+		text-align: center;
+	}
+
+	#curate-img{
+		margin-left: 10%;
+	}
+
+	.col-md-8{
+		text-align: center;
+	}
+
+}
+
+@media (max-width: 400px){     /*keeping heading, picture, and paragraph centered*/
+	#feature-banner{
+		text-align: center;
+	}
+
+	#feature-banner h1{     /*fixed the heading to fit smaller screen*/
+		font-size: 30px;
+	}
+
+	#curate-img{
+		margin-left: 5%;
+	}
+
+	.col-md-8{
+		text-align: center;
+	}
+
+	.col-md-8 p{
+		font-size: 18px;
+	}
+
+}
+
+/*======Packaged with tools section=========*/
+@media (max-width: 1250px){
+	.container .feature-box{
+		text-align: center;
+	}
+
+	.container .feature-box h2{
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 993px){
+	.container .feature-box{
+		text-align: center;
+	}
+
+	div #features-img{
+		margin-top: 15px;
+		margin-bottom: -5%;
+	}
+	.container .feature-box h2{
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 400px){
+	.container .feature-box{
+		text-align: center;
+	}
+
+	div #features-img{
+		margin-top: 15px;
+		margin-bottom: -5%;
+	}
+	.container .feature-box h2{
+		font-size: 30px;
 	}
 }
