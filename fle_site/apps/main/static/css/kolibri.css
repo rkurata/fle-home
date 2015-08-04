@@ -13,6 +13,7 @@ h1 {
 
 hr {
 	margin: 5%;
+	border-color: #86bcc4;
 }
 p {
 	font-size: 18px;
@@ -161,6 +162,21 @@ p {
 
 
 /* "ECOSYSTEM" FEATURES */
+
+.breaking-down{
+	margin-top: -10%; 
+}
+
+.col-md-7{
+	margin-top: 5%;
+}
+
+#vectorization-placeholder {
+	margin-top:5%;
+	max-width: 90%;
+}
+
+
 #sneakernet {
 	color:#6F3496;
 	font-style:bold;
@@ -179,19 +195,10 @@ p {
 	height: auto;
 }
 
-#vectorization-placeholder {
-	margin-top:5%;
-	max-width: 90%;
-}
 
-#cross-platform-img {
-	width:60%;
-	height:60%;
-}
-
-#platform-img {
-	text-align:center;
-}
+.content-vect{
+		margin-top: 10%;
+	}
 
 
 /* KOLIBRI PLATFORM FEATURES */
@@ -209,8 +216,8 @@ p {
 	margin-bottom:5%;
 }
 
-#feature-banner {
-	margin-top:-17%;
+.col-md-8 p{
+	margin-top: 7%;
 }
 
 /*======================================================================*/
@@ -333,5 +340,115 @@ p {
 @media (max-width: 620px) {
 	#bg-img p {
 		margin:5%;/*adding space btwn header and text*/
+	}
+}
+
+/*======Curate High Quality, Unique Courses section=========*/
+@media (max-width: 1000px){     /*keeping heading, picture, and paragraph centered*/
+	#feature-banner{
+		text-align: center;
+	}
+
+	#curate-img{
+		margin-left: 20%;
+	}
+
+	.col-md-8{
+		text-align: center;
+	}
+
+}
+
+@media (max-width: 650px){     /*keeping heading, picture, and paragraph centered*/
+	#feature-banner{
+		text-align: center;
+	}
+
+	#curate-img{
+		margin-left: 20%;
+	}
+
+	.col-md-8{
+		text-align: center;
+		font-size: 20px;
+	}
+
+}
+
+@media (max-width: 500px){     /*keeping heading, picture, and paragraph centered*/
+	#feature-banner{
+		text-align: center;
+	}
+
+	#curate-img{
+		margin-left: 10%;
+	}
+
+	.col-md-8{
+		text-align: center;
+	}
+
+}
+
+@media (max-width: 400px){     /*keeping heading, picture, and paragraph centered*/
+	#feature-banner{
+		text-align: center;
+	}
+
+	#feature-banner h1{     /*fixed the heading to fit smaller screen*/
+		font-size: 30px;
+	}
+
+	#curate-img{
+		margin-left: 5%;
+	}
+
+	.col-md-8{
+		text-align: center;
+	}
+
+
+	.col-md-8 p{
+		font-size: 18px;
+	}
+
+}
+
+/*======Packaged with tools section=========*/
+@media (max-width: 1250px){
+	.container .feature-box{
+		text-align: center;
+	}
+
+	.container .feature-box h2{
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 993px){
+	.container .feature-box{
+		text-align: center;
+	}
+
+	div #features-img{
+		margin-top: 15px;
+		margin-bottom: -5%;
+	}
+	.container .feature-box h2{
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 400px){
+	.container .feature-box{
+		text-align: center;
+	}
+
+	div #features-img{
+		margin-top: 15px;
+		margin-bottom: -5%;
+	}
+	.container .feature-box h2{
+		font-size: 30px;
 	}
 }
