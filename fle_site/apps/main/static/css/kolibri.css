@@ -4,7 +4,9 @@
 h1, h2, h3 {
 	color:#6F3496;
 	margin-top: 5%;
+	margin-bottom:2%;
 }
+
 h1 {
 	font-size: 40px;
 }
@@ -16,7 +18,9 @@ hr {
 p {
 	font-size: 18px;
 	letter-spacing: 0.03em;
+	margin-bottom:2%;
 }
+
 .kolibri-section {
 	margin: 10% auto;
 }
@@ -138,14 +142,14 @@ p {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	padding-top:12%;
-	padding-bottom:17%;
+	padding-top:14%;
+	padding-bottom:15%;
 }
+
 #kolibri-about h1 {
 	margin-top:5%;
 	color:#ffffff;
 	margin-bottom:2%;
-
 }
 
 #kolibri-about p {
@@ -158,6 +162,7 @@ p {
 
 
 /* "ECOSYSTEM" FEATURES */
+
 .breaking-down{
 	margin-top: -10%; 
 }
@@ -171,6 +176,7 @@ p {
 	max-width: 90%;
 }
 
+
 #sneakernet {
 	color:#6F3496;
 	font-style:bold;
@@ -179,26 +185,32 @@ p {
 .break-barriers h1 {
 	margin-bottom: 5%;
 }
+
 #offline {
 	text-align: center;
 }
+
 #offline-placeholder {
 	max-width: 90%;
 	height: auto;
 }
 
+
 .content-vect{
 		margin-top: 10%;
 	}
+
 
 /* KOLIBRI PLATFORM FEATURES */
 
 #curate-img {
 	max-width: 90%;
 }
+
 #parallax {
 	font-size:22px;
 }
+
 #features-img {
 	margin-top:5%;
 	margin-bottom:5%;
