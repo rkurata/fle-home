@@ -11,6 +11,7 @@ h1 {
 
 hr {
 	margin: 5%;
+	border-color: #86bcc4;
 }
 p {
 	font-size: 18px;
@@ -157,6 +158,14 @@ p {
 
 
 /* "ECOSYSTEM" FEATURES */
+.breaking-down{
+	margin-top: -10%; 
+}
+
+.col-md-7{
+	margin-top: 5%;
+}
+
 #vectorization-placeholder {
 	margin-top:5%;
 	max-width: 90%;
@@ -178,6 +187,9 @@ p {
 	height: auto;
 }
 
+.content-vect{
+		margin-top: 10%;
+	}
 
 /* KOLIBRI PLATFORM FEATURES */
 
@@ -192,7 +204,9 @@ p {
 	margin-bottom:5%;
 }
 
-
+.col-md-8 p{
+	margin-top: 7%;
+}
 
 /*======================================================================*/
 /*======================= RESPONSIVE QUERIES ===========================*/
@@ -380,6 +394,7 @@ p {
 	.col-md-8{
 		text-align: center;
 	}
+
 
 	.col-md-8 p{
 		font-size: 18px;
