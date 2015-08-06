@@ -142,8 +142,8 @@ p {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	padding-top:14%;
-	padding-bottom:15%;
+	padding-top:16%;
+	padding-bottom:13%;
 }
 
 #kolibri-about h1 {
@@ -197,8 +197,14 @@ p {
 
 
 .content-vect{
-		margin-top: 10%;
-	}
+	margin-top: 10%;
+}
+
+#cross-platform-img{
+	height:50%;
+	width:50%;
+	margin-left:50%
+}
 
 
 /* KOLIBRI PLATFORM FEATURES */
@@ -216,8 +222,8 @@ p {
 	margin-bottom:5%;
 }
 
-.col-md-8 p{
-	margin-top: 7%;
+#curate{
+	margin-top:-8%;
 }
 
 /*======================================================================*/
