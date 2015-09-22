@@ -936,6 +936,17 @@ mark{
   padding: 10% 0%;
   animation-delay: 0.5s;
 }
+
+.shift-down{
+  position: relative;
+  top: 11px;
+}
+
+.shift-down2{
+  position: relative;
+  top: 5px;
+  left: 24px;
+}
 /*.below-fold2 .col-md-12 img {
   max-width: 300px;
 }
