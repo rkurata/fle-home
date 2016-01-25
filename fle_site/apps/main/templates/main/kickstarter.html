@@ -10,6 +10,7 @@
     <meta property="og:image" content="{% static 'img/kickstarter/fb-sharedlink.png' %}" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/flipclock.css' %}">
+    <link rel="stylesheet" href="{% static 'css/_kickstarter_puzzles.css' %}">
     <link rel="stylesheet" href="{% static 'css/kickstarter.css' %}?asdfghjkl">
     <link rel="stylesheet" href="{% static 'css/_kickstarter_features.css' %}">
     <link rel="stylesheet" href="{% static 'css/_kickstarter_how.css' %}">
@@ -62,19 +63,32 @@
                         <div class="row">
                             <!-- <div id="campaign-intro-1">Announcing our next-generation platform</div> -->
                             <div id="intro_container">
-                            <div class="col-md-6">
-                                <div class="intro-heading">Kolibri<span class="hidden-xs hidden-sm" style="font-weight: 100; top:-8px; position: relative;">|</span> </div>
+                                 <div class="col-md-6">
+                                     <img class="intro-logo" style="float:right" src="../../static/img/kolibri-logo.png"></img>
+                                </div>
+                                 <div class="col-md-6">
+                                     <div class="intro-heading">Kolibri<!--<span class="hidden-xs hidden-sm" style="font-weight: 100; top:-8px; position: relative;">|</span>--> </div>
+                                 </div>
+                                <div class="col-md-12">
+                                    <div class="intro-heading2">
+                                        <p>The offline app for universal education</p>
+                                        <p>Brought to you by Learning Equality</p>
+                                        </div>
+                                    <div class="intro-heading3">Coming soon in 2016!</div>
+                                </div>
+                             
                             </div>
-                            <div class="col-md-6">
-                                 <div class="intro-heading2">The offline app for<br>universal education</div>
-                            </div>
-                            </div>
+
+                           
 
                             <div class="videoWrapper">
                                 <iframe id="k_video" src="https://player.vimeo.com/video/143710663" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                             </div>
     
-                            <center><a class="btn" id="igg_btn" href="https://learningequality.org/r/indiegogo-redirect">Back our Kolibri Campaign on <img id="indiegogo_generosity" alt="Indiegogo" src="{% static 'img/kickstarter/indiegogo_generosity.png' %}"></a></center>
+                           <!-- <center><a class="btn" id="igg_btn" href="https://learningequality.org/r/indiegogo-redirect">Back our Kolibri Campaign on <img id="indiegogo_generosity" alt="Indiegogo" src="{% static 'img/kickstarter/indiegogo_generosity.png' %}"></a></center>-->
+                          <center> <a class="btn" id="igg_btn"  href="https://learningequality.org/r/indiegogo-redirect">Make a Donation</a>
+                            <a class="btn" id="igg_btn"  href="#">Follow our Progress</a></center>
+
                             <!-- <div class="countdown"></div> -->
                             <br><br>
                         </div>
@@ -95,11 +109,14 @@
         <!-- sticky sign up bar -->
         {% include "main/partials/_sticky_bar.html" %}
 
-        <img id="slide_tablet" src="/static/img/kickstarter/tablet-min.png">
+        <!--<img id="slide_tablet" src="/static/img/kickstarter/tablet-min.png">-->
 
         <!-- Below the fold version 2 -->
+
         <section id="fle_intro" class="row">
-            {% include "main/partials/_kickstarter_intro2.html" %}
+            {% include "main/partials/_kickstarter_puzzle_intro.html" %}
+
+           <!-- {% include "main/partials/_kickstarter_intro2.html" %}-->
         </section>
 
         <!-- FLE how it works -->

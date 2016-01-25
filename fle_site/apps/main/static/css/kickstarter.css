@@ -347,31 +347,50 @@ header {
   top: 14%;
 }
 #intro_container {
-  margin-left: 50px;
+  /*margin-left: 50px;*/
   margin-top: 90px;
+  max-width: 1000px;
+  text-align:center;
+
 }
+.intro-logo{
+  max-width:80px;
+  position:relative;
+  margin-right:0px;
+  padding-right:0px;
+}
+
 .intro-heading {
+  color:#957fb3;
   font-family: "Montserrat";
   max-width: 1000px;
   font-size: 80px;
   line-height: 56px;
   position: relative;
   z-index: -1;
-  text-align: right;
+  text-align: left;
+  padding-right: 60px;
+  left: -20px;
+
 }
 span.hidden-xs.hidden-sm {
   display: inline !important;
 }
 .intro-heading2 {
-  color: white;
+  color: black;
+  z-index: -1;
+  font-size: 20px;
+  font-family: "Open Sans";
+  text-align:center;
+}
+.intro-heading3{
+  color: #7baea9;
   z-index: -1;
   position: relative;
   font-size: 30px;
   font-family: "Open Sans";
-  padding-right: 60px;
-  top: -15px;
-  text-align: left;
-  left: -20px;
+  max-width: 1000px;
+
 }
 #header-mailchimp {
   position: relative;
@@ -822,7 +841,8 @@ mark{
 
 #kickstarter-header{
   
-  background: url('../img/kickstarter/header-cover.jpg') no-repeat;
+ /* background: url('../img/kickstarter/header-cover.jpg') no-repeat;*/
+ background-color:#ffffff;
   -webkit-background-size: cover;
   background-size: cover;
   width: 100%;
@@ -991,9 +1011,12 @@ mark{
   margin: 50px auto 0 auto;
 }
 
+
+
+
+
 /* Introduction to Kolibri Version 2 */
-
-
+}
 .below-fold2 {
   height: 80vh;
   min-height: 628px;
