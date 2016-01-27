@@ -342,22 +342,23 @@ header {
   text-align: left;
   color: white;
 }
+/*header- kolibri logo & kolibri text*/
 .intro-text {
   position: relative;
   top: 14%;
 }
-#intro_container {
-  /*margin-left: 50px;*/
-  margin-top: 90px;
+.intro_container {
+  margin-top: 10%;
   max-width: 1000px;
   text-align:center;
-
+  margin-bottom:7px;
 }
-.intro-logo{
-  max-width:80px;
+
+.intro-logo img{
+  float:right;
+  max-width:90px;
   position:relative;
-  margin-right:0px;
-  padding-right:0px;
+  padding-right:10px;
 }
 
 .intro-heading {
@@ -369,33 +370,83 @@ header {
   position: relative;
   z-index: -1;
   text-align: left;
-  padding-right: 60px;
-  left: -20px;
+}
 
-}
-span.hidden-xs.hidden-sm {
+/*span.hidden-xs.hidden-sm {
   display: inline !important;
-}
+}*/
+
+/*the offline app for universal education*/
 .intro-heading2 {
   color: black;
   z-index: -1;
   font-size: 20px;
   font-family: "Open Sans";
   text-align:center;
+  max-width:auto;
 }
+
+/*brought to you by fle*/
+.subtext_container{
+  max-width:1000px;
+  margin:auto;
+}
+
+table{
+  max-width:1000px;
+  margin:auto;
+}
+
 .intro-heading3{
-  color: #7baea9;
+  color: #8c8c8c;
   z-index: -1;
   position: relative;
-  font-size: 30px;
+  font-size: 20px;
   font-family: "Open Sans";
   max-width: 1000px;
-
+  text-align:left;
+  left: -20px;
 }
+
+.intro-heading3-logo img{
+  float:right;
+  max-width:25px;
+  position:relative;
+  left:-13px;
+}
+
+/*coming soon banner*/
+.coming-soon{
+  text-align:center;
+  background:url('../img/banner.png') no-repeat;
+  background-position:center;
+  padding: 24px;
+  color:#fff;
+  font-size:20px;
+}
+
+/*buttons below video*/
+.intro-btn{
+  margin-bottom:6%;
+}
+
 #header-mailchimp {
   position: relative;
   z-index: 999;
   width: 320px;
+}
+
+@media(max-width:1200px){
+  .coming-soon{
+    max-width:700px;
+  }
+}
+
+@media (max-width: 990px){
+  .coming-soon{
+    margin-bottom:8%;
+  }
+
 }
 
 @media (max-width: 900px) {
@@ -840,9 +891,7 @@ mark{
 }
 
 #kickstarter-header{
-  
- /* background: url('../img/kickstarter/header-cover.jpg') no-repeat;*/
- background-color:#ffffff;
+  background-color:#ffffff;
   -webkit-background-size: cover;
   background-size: cover;
   width: 100%;
