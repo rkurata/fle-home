@@ -380,10 +380,16 @@ header {
 .intro-heading2 {
   color: black;
   z-index: -1;
-  font-size: 20px;
+  font-size: 22px;
   font-family: "Open Sans";
   text-align:center;
   max-width:auto;
+}
+
+/*kolibri & fle headers*/
+table{
+  max-width:auto;
+  margin:auto;
 }
 
 /*brought to you by fle*/
@@ -392,27 +398,21 @@ header {
   margin:auto;
 }
 
-table{
-  max-width:1000px;
-  margin:auto;
-}
-
 .intro-heading3{
   color: #8c8c8c;
   z-index: -1;
   position: relative;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Open Sans";
   max-width: 1000px;
   text-align:left;
-  left: -20px;
 }
 
 .intro-heading3-logo img{
   float:right;
   max-width:25px;
   position:relative;
-  left:-13px;
+  left:5px;
 }
 
 /*coming soon banner*/
@@ -427,7 +427,8 @@ table{
 
 /*buttons below video*/
 .intro-btn{
-  margin-bottom:6%;
+  max-width:1000px;
+  margin:auto;
 }
 
 #header-mailchimp {
@@ -435,41 +436,6 @@ table{
   z-index: 999;
   width: 320px;
 }
-
-@media(max-width:1200px){
-  .coming-soon{
-    max-width:700px;
-  }
-}
-
-@media (max-width: 990px){
-  .coming-soon{
-    margin-bottom:8%;
-  }
-
-}
-
-@media (max-width: 900px) {
-  .intro-heading {
-    font-size: 50px;
-    max-width: 750px;
-  }
-  .intro-heading2 {
-    font-size: 25px;
-  }
-}
-@media (max-width: 500px) {
-  .intro-text {
-    top: 18vh;
-  }
-  .intro-heading {
-    font-size: 38px;
-  }
-  .intro-heading2 {
-    font-size: 24px;
-  }
-}
-
 
 /* LAST CALL TO ACTION */
 section#contact {
@@ -778,85 +744,6 @@ mark{
   margin: 0 !important;
 }
 
-/* Media Query Min-Width 700px */
-
-@media (min-width: 700px) {
-  .email_input_k {
-    outline: none;
-    clear: none !important;
-    float: left;
-    /*width: 400px;*/
-    background-color: white;
-    font-family: "Open Sans";
-    font-weight: 700;
-    font-size: 18px;
-    padding: 15px 40px;
-    box-shadow: none;
-    border: 3px solid #fff !important;
-    text-align: left;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-  }
-  .email_submit_k {
-    clear: none !important;
-    float: left;
-    width: 300px;
-    border: 3px solid #CB99C5  !important;
-    padding: 15px 21px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    color: #2A2A2A;
-  }
-}
-
-
-/* Media Query Max-Width 500px */
-
-@media (max-width: 500px) {
-  #slider {
-    background-position: right;
-  }
-  .slider-overlay{
-    margin-top:-100px;
-    background-color: rgba(0,0,0,.3);
-  }
-  #iframe-wrapper {
-    padding: 0px 0px ;
-  }
-  .mailing_toplabel{
-    padding-top: 100px;
-    font-size: 1.9em ;
-  }
-  .mailing_sidelabel{
-    font-size: 25px ;
-    text-align: center;
-    padding: 10% 8%;
-    line-height: 1.5em;
-  }
-
-
-  .email_input_k {
-    text-align: center;
-    display: block;
-    clear: both;
-    float: none;
-    width: 300px;
-    margin-right: 10px;
-    margin-left: 10px;
-    border-top-right-radius: 4px;
-  }
-  .email_submit_k {
-    display: block;
-    clear: both;
-    float: none;
-    width: 300px;
-    margin-right: 10px;
-    margin-left: 10px;
-    padding: 10px;
-  }
-
-}
-
 /* BACK TO TOP BUTTON */
 .back-to-top {
   position: fixed;
@@ -999,214 +886,4 @@ mark{
   font-weight: bold;
   font-family: "Montserrat-Light";
 }
-.campaign-info{
-  padding-left: 5%;
-}
-#campaign-intro-1 {
-  margin: auto;
-  position: relative;
-  text-align: center;
-  font-size: 26px;
-  top: -40px;
-  font-family: "Montserrat-Light";
-  color: white;
-}
-#accouncing-banner {
-  top: -20px;
-  position: relative;
-  width: 600px;
-}
-/*#campaign-intro-2 {
-  margin: auto;
-  position: relative;
-  text-align: center;
-  font-size: 26px;
-  top: 5px;
-  font-family: "Montserrat-Light";
-  color: #FFCC00;
-}*/
-#kickstarter{
-  width: 40%;
-  position: absolute;
-  z-index: 3;
-  top: 10vh;
-}
-.campaign-intro {
-  font-family: "Montserrat-Light";
-  font-size: 19px;
-  line-height: 56px;
-  position: relative;
-  z-index: 3;
-  font-weight: 100;
-  top: 9vh;
-}
 
-.arrow-down {
-  position: relative;
-  text-align: center;
-  z-index: 3;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-name: bounce;
-  -moz-animation-name: bounce;
-  animation-name: bounce;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  width: 80px;
-  height: 40px;
-  display: block;
-  margin: 50px auto 0 auto;
-}
-
-
-
-
-
-/* Introduction to Kolibri Version 2 */
-}
-.below-fold2 {
-  height: 80vh;
-  min-height: 628px;
-  background: white;
-  text-align: center;
-  background-size: cover;
-}
-
-#kolibri_logo{
-  padding-top:8%;
-  width: 30%;
-  margin-top: 30px;
-  opacity: 0.9;
-}
-
-/* Kolibri Statment */
-
-.below-fold2 h1{
-  font-weight: 400;
-  text-transform: initial;
-
-}
-
-.below-fold2 h2{
-  font-weight: 300;
-  font-size: 26px;
-  line-height: 140%;
-  text-transform: initial;
-  font-family: "Montserrat";
-  max-width: 600px;
-  margin: auto;
-}
-
-.below-fold2 h3{
-  font-weight: 100;
-  text-transform: initial;
-  font-family:  "Montserrat-Light";
-}
-
-/* Use Cases */
-
-.use-cases{
-  margin-top:7% !important;
-  background: white;
-}
-
-.use-cases p{
-  font-family: "Montserrat-Light";
-  font-weight: 100 ;
-  font-size:15px;
-  color: #8D69A4;
-
-
-}
-.use-image{
-  width:50%;
-  text-align: center;
-  vertical-align: center;
-}
-
-/* Problem Statment */
-.problem-statement{
-  padding: 5% 0%;
-  background: #8D69A3;
-}
-
-.top-box{
-  padding: 10% 0%;
-  animation-delay: 0.5s;
-
-}
-
-.bottom-box{
-  padding: 10% 0%;
-  animation-delay: 0.5s;
-}
-
-.top-box img,
-.bottom-box img {
-  max-width: 400px;
-  margin-top: 20px;
-}
-
-.shift-down{
-  position: relative;
-  top: 11px;
-}
-
-.shift-down2{ 
-  position: relative;
-  top: 5px;
-  left: 24px;
-}
-
-#mce-success-response,
-#mce-error-response {
-  color: white;
-}
-
-#slide_tablet {
-    top: 130px;
-    right: 0;
-    width: 40%;
-    position: fixed;
-    transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
-}
-@media screen and (min-width: 450px) {
-  .email_input_k {
-      text-align: center !important;
-      outline: none;
-      clear: none !important;
-      float: left;
-      width: 220px;
-      background-color: white;
-      font-family: "Open Sans";
-      font-weight: 700;
-      font-size: 15px;
-      padding: 15px 10px;
-      box-shadow: none;
-      border: 3px solid #fff !important;
-      text-align: left;
-      border-top-left-radius: 10px;
-      border-bottom-left-radius: 10px;
-      border-top-right-radius: 0px;
-    }
-    .email_submit_k {
-      clear: none !important;
-      float: left;
-      width: 200px;
-      border: 3px solid #CB99C5  !important;
-      padding: 15px 21px;
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
-      color: #2A2A2A;
-    }
-    .e1 {
-      left: 0;
-      max-width: 500px;
-    }
-    .e1 input {
-      margin: 0;
-    }
-}

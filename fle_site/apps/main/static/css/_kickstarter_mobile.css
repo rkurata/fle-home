@@ -11,19 +11,10 @@
 		left: 3%;
 	}
 	.sticky-mailchimp {
-		/*width: 991px;*/
-		/*right: -25%;*/
 		float: right;
 		position: relative;
 		margin-top: -14px;
 	}
-	/*.email_input_k {
-		width: 220px;
-		font-size: 15px;
-	}
-	.email_submit_k {
-		width: 200px;
-	}*/
 	.btn-xl, #steps div p,
 	#how-image .row div p {
 		font-size: 15px;
@@ -59,6 +50,21 @@
 	}
 }
 
+@media screen and (min-width: 1200px) {
+  #donor_carousel {
+    margin-right: 10vw;
+  }
+}
+
+@media (max-width: 1200px){
+	.coming-soon{
+  		background-size:52%;
+  }
+  #igg_btn{
+  	padding: 10px 20px;
+  }
+}
+
 @media screen and (max-width: 1060px) {
 	.sticky-mailchimp {
 		top: -20%;
@@ -73,9 +79,35 @@
 }
 
 @media screen and (max-width: 990px) {
-	#slide_tablet {
-		display: none;
+	/*above the fold*/
+	.intro-heading {
+		font-size: 50px;
 	}
+	.intro-heading2{
+		font-size:18px;
+	}
+	#igg_btn{
+	  	padding: 8px 14px;
+	  	margin: -25px 8px 60px;
+	  	font-size:16px;
+  }
+	#intro_container {
+   		margin-left: 0;
+  }
+  #donor_carousel {
+    	display: none;
+  }
+  #igg_progress {
+	    width: 90%;
+	    margin-left: 5%;
+	    display: inline-block;
+  }
+  #k_video {
+    	margin-top: 0;
+  }
+}
+	/*end above-the-fold*/
+
 	#dreams, .fle_title h1,
 	#fle_timeline .fle_title h1 {
 		font-size: 40px;
@@ -114,9 +146,7 @@
 		background: white;
 		height: 850px;
 	}
-	.intro-heading {
-		font-size: 50px;
-	}
+	
 	span.hidden-xs.hidden-sm {
 		display: none !important;
 	}
@@ -126,12 +156,6 @@
 	.intro-social {
 		right: 0;
 		margin-top: 21%;
-	}
-	.intro-heading2 {
-		padding-right: 0;
-		left: 0;
-		top: 10px;
-		font-size: 28px;
 	}
 	#campaign-intro {
 		font-size: 20px;
@@ -148,21 +172,9 @@
 		margin: 0;
 		max-width: 225px;
 	}
-	#kolibri_logo {
-		width: 70%;
-		max-width: 250px;
-		margin-bottom: 30px;
-	}
-	.below-fold2 h2 {
-		font-size: 20px;
-	}
 	.shift-down2 {
 		top: 0;
 		left: 0;
-	}
-	.use-image {
-		height: 60px;
-		width: auto;
 	}
 	.fle_title {
 		padding: 30px 0;
@@ -170,26 +182,6 @@
 	}
 	.no-internet-intro, .tools-intro {
 		background: rgba(134, 112, 161, 0.8);
-	}
-	#how-image {
-		min-height: 600px;
-		height: 70%;
-		background-position: center bottom;
-	}
-	#how-image .row {
-		height: 40%;
-	}
-	#how-image .row div {
-		margin-top: 50px;
-		border-radius: 0px;
-	}
-	.how-explanation h2 {
-		margin-top: 0;
-		padding-top: 20px;
-	}
-	#how-1, #how-2, #how-3 {
-		height: 160px;
-    	background-size: 250px;
 	}
 	.wow img {
 		margin: 0;
@@ -308,6 +300,231 @@
 	}
 }
 
+@media screen and (max-width: 768px) {
+  /*above the fold*/
+  #k_video {
+    margin-top: -10px;
+   }
+   .coming-soon{
+   	font-size:14px;
+   }
+   #igg_btn {
+   	padding: 10px 14px;
+  	margin: -25px 8px 60px;
+  	font-size:14px;
+  }
+  .videoWrapper iframe {
+  position: absolute;
+  top: 22%;
+  left: 25%;
+  width: 50%;
+  height: 72%;
+}
+  /*end above the fold*/
+}
+
+@media screen and (height: 768px) { /*target ipad*/
+  #igg_btn {
+    margin-top: -30px;
+    font-size: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+	/*above the fold*/
+	.intro-heading{
+		padding-top:10%;
+		font-size:40px;
+	}
+	.intro-logo img{
+		padding-top:10%;
+		max-width:50px;
+		bottom:5px;
+	}
+	.intro-heading2, .intro-heading3{
+		font-size:12px;
+	}
+	.coming-soon{
+		font-size:12px;
+	}
+	/*end above the fold*/
+	.countdown {
+		zoom: 0.8;
+		-webkit-transform: 0.8;
+		-moz-transform: 0.8;
+	}
+}
+
+/* Media Query Min-Width 700px */
+
+@media (min-width: 700px) {
+  .email_input_k {
+    outline: none;
+    clear: none !important;
+    float: left;
+    /*width: 400px;*/
+    background-color: white;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 18px;
+    padding: 15px 40px;
+    box-shadow: none;
+    border: 3px solid #fff !important;
+    text-align: left;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .email_submit_k {
+    clear: none !important;
+    float: left;
+    width: 300px;
+    border: 3px solid #CB99C5  !important;
+    padding: 15px 21px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #2A2A2A;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .intro-text {
+    top: 11%;
+  }
+  #indiegogo_generosity {
+    height: 14px;
+  }
+  /*above the fold*/
+  #igg_btn {
+    margin-top: 15px;
+  }
+  /*end above the fold*/
+}
+
+
+@media screen and (max-width: 550px) {
+	.countdown {
+		zoom: 0.6;
+		-webkit-transform: 0.6;
+		-moz-transform: 0.6;
+	}
+	.flip-clock-wrapper ul li a div div.inn {
+		font-size: 45px;
+	}
+}
+/* Media Query Max-Width 500px */
+
+@media (max-width: 500px) {
+  #slider {
+    background-position: right;
+  }
+  .slider-overlay{
+    margin-top:-100px;
+    background-color: rgba(0,0,0,.3);
+  }
+  #iframe-wrapper {
+    padding: 0px 0px ;
+  }
+  .mailing_toplabel{
+    padding-top: 100px;
+    font-size: 1.9em ;
+  }
+  .mailing_sidelabel{
+    font-size: 25px ;
+    text-align: center;
+    padding: 10% 8%;
+    line-height: 1.5em;
+  }
+
+
+  .email_input_k {
+    text-align: center;
+    display: block;
+    clear: both;
+    float: none;
+    width: 300px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-top-right-radius: 4px;
+  }
+  .email_submit_k {
+    display: block;
+    clear: both;
+    float: none;
+    width: 300px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+	/*above the fold*/
+	.intro-heading{
+		padding-top:30%;
+	}
+	.intro-logo{
+		padding-top:30%;
+	}
+	.coming-soon{
+		background-size:50%;
+		font-size:8px;
+	}
+	/*end above the fold*/
+	.countdown {
+		zoom: 0.4;
+		-webkit-transform: 0.4;
+		-moz-transform: 0.4;
+	}
+	.flip-clock-label {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 450px) {
+  .email_input_k {
+      text-align: center !important;
+      outline: none;
+      clear: none !important;
+      float: left;
+      width: 220px;
+      background-color: white;
+      font-family: "Open Sans";
+      font-weight: 700;
+      font-size: 15px;
+      padding: 15px 10px;
+      box-shadow: none;
+      border: 3px solid #fff !important;
+      text-align: left;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 0px;
+    }
+    .email_submit_k {
+      clear: none !important;
+      float: left;
+      width: 200px;
+      border: 3px solid #CB99C5  !important;
+      padding: 15px 21px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      color: #2A2A2A;
+    }
+    .e1 {
+      left: 0;
+      max-width: 500px;
+    }
+    .e1 input {
+      margin: 0;
+    }
+}
+
 @media screen and (max-width: 325px) {
 	#mc-embedded-subscribe {
 	    width: 300px;
@@ -320,33 +537,5 @@
 		margin: auto;
     	border-top-right-radius: 10px;
     	text-align: center !important;
-	}
-}
-
-@media screen and (max-width: 700px) {
-	.countdown {
-		zoom: 0.8;
-		-webkit-transform: 0.8;
-		-moz-transform: 0.8;
-	}
-}
-@media screen and (max-width: 550px) {
-	.countdown {
-		zoom: 0.6;
-		-webkit-transform: 0.6;
-		-moz-transform: 0.6;
-	}
-	.flip-clock-wrapper ul li a div div.inn {
-		font-size: 45px;
-	}
-}
-@media screen and (max-width: 450px) {
-	.countdown {
-		zoom: 0.4;
-		-webkit-transform: 0.4;
-		-moz-transform: 0.4;
-	}
-	.flip-clock-label {
-		display: none;
 	}
 }

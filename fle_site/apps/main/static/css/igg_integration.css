@@ -206,91 +206,10 @@
 }
 .videoWrapper iframe {
   position: absolute;
-  top: 18%;
-  left: 17%;
-  width: 65%;
-  height: 89%;
+  top: 22%;
+  left: 25%;
+  width: 50%;
+  height: 72%;
 }
 
-/* Make video and funding tracker */
 
-@media screen and (max-width: 590px) {
-  .container {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-  .intro-text {
-    top: 11%;
-  }
-  #indiegogo_generosity {
-    height: 14px;
-  }
-  .videoWrapper iframe {
-    width: 73%;
-    height: 100%;
-    left: 14%;
-    top: 50px;
-  }
-  #igg_btn {
-    margin-top: 15px;
-  }
-}
-@media screen and (height: 768px) { /*target ipad*/
-  .intro-text {
-    top: 12%;
-  }
-  .intro-heading {
-    font-size: 50px;
-    top: -13px;
-  }
-  .intro-heading2 {
-    font-size: 20px;
-  }
-  #igg_btn {
-    margin-top: -30px;
-    font-size: 20px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-  }
-}
-@media screen and (max-width: 768px) {
-  #k_video {
-    margin-top: -50px;
-  }
-}
-@media screen and (max-width: 990px) {
-  #intro_container {
-    margin-left: 0;
-  }
-  #donor_carousel {
-    display: none;
-  }
-  #igg_progress {
-    width: 90%;
-    margin-left: 5%;
-    display: inline-block;
-  }
-  .intro-heading2 {
-    font-size: 20px;
-    margin-bottom: 25px;
-  }
-  .videoWrapper iframe {
-    top: 0;
-  }
-  #k_video {
-    margin-top: 0;
-  }
-}
-@media screen and (min-width: 990px) {
-  .videoWrapper iframe {
-    top: 22%;
-    left: 25%;
-    width: 50%;
-    height: 72%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  #donor_carousel {
-    margin-right: 10vw;
-  }
-}
