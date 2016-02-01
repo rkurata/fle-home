@@ -4,11 +4,11 @@
   width: 100%;
 }
 #how-container {
-  /*height: 100vh;*/
   min-height: 838px;
   font-family: "Montserrat-Light";
   color: white;
 }
+/*background image*/
 #how-image {
   background: url('../img/kickstarter/how_it_works/nalanda-how.jpg') no-repeat;
   background-size: cover;
@@ -16,6 +16,26 @@
   min-height: 838px;
   height: 100%;
 }
+/*puzzle piece header*/
+#bullet-header{
+  float:left;
+  margin-right:0px;
+}
+.bullet-img img{
+  position:relative;
+  float:right;
+  top:10px;
+}
+.bullet-txt{
+  text-align:left;
+  color:#000;
+}
+hr.vertical{
+  width: 0px;
+  height: 100%; 
+  margin-left:50%;
+}
+
 #how-image .row {
   height: 50%;
 }

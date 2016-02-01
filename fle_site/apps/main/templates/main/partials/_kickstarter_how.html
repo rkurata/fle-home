@@ -1,7 +1,20 @@
 {% load staticfiles %}
-
 <div id="how-container" class="row">
 	<div id="how-image" class="col-md-8 col-xs-12">
+		<div class="row">
+			<div class="col-xs-offset-12">
+			 <table id="bullet-header">
+                <tr >
+                    <td class="bullet-img"><img src="{% static 'img/kickstarter/how_it_works/offline.png'%}"></img></td>
+                    <td class="bullet-txt">
+                        <h1>Offline Access</h1>
+						<h3>How does Kolibri work offline?</h3></td>
+                </tr>
+            </table>
+       		 </div>
+        </div>
+
+	<hr class="vertical">
 		<div class="row">
 			<div class="no-internet-intro col-md-5 col-md-offset-6">
 				<h2>No Internet Needed</h2>
@@ -23,19 +36,16 @@
 				<h3>1. "Seeding" a Device</h3>
 				<p>Kolibri installers, updates, and content can be downloaded once to a device in an area that has an Internet connection</p>
 				<div class="how-box" id="how-1"></div>
-				<!-- <img src="{% static 'img/kickstarter/how_it_works/how1.png' %}"> -->
 			</div>
 			<div class="how-step">
 				<h3>2. Peer-to-Peer Distribution</h3>
 				<p>That "seeded" device can then share new content and updates with other devices over an offline local network.</p>
 				<div class="how-box" id="how-2"></div>
-				<!-- <img src="{% static 'img/kickstarter/how_it_works/step-2.png' %}"> -->
 			</div>
 			<div class="how-step">
 				<h3>3. Last Mile via "Sneakernet"</h3>
 				<p>To reach the most remote communities, a device can be carried by foot to share installers, updates, and content.</p>
 				<div class="how-box" id="how-3"></div>
-				<!-- <img src="{% static 'img/kickstarter/how_it_works/step-3.png' %}"> -->
 			</div>
 		</div>
 	</div>

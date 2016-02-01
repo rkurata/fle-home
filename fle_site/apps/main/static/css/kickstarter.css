@@ -347,7 +347,7 @@ header {
   position: relative;
   top: 14%;
 }
-.intro_container {
+.intro {
   margin-top: 10%;
   max-width: 1000px;
   text-align:center;
@@ -387,7 +387,7 @@ header {
 }
 
 /*kolibri & fle headers*/
-table{
+#above-the-fold{
   max-width:auto;
   margin:auto;
 }
@@ -427,7 +427,7 @@ table{
 
 /*buttons below video*/
 .intro-btn{
-  max-width:1000px;
+  max-width:580px;
   margin:auto;
 }
 

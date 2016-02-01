@@ -59,12 +59,9 @@
             <div class="header-shadow row">
                 <!---Kolibri Intro-->
                 <div class="intro-text">
-                    <div class="container">
-                       <!-- <div class="col-xs-6">
-                                <div class="intro-heading">Kolibri-->
+                    <div class="container intro">
                                     <!--<span class="hidden-xs hidden-sm" style="font-weight: 100; top:-8px; position: relative;">|</span>--> 
-
-                        <table class="intro_container">
+                       <table id="above-the-fold">
                             <tr >
                                 <td class="intro-logo"><img src="{% static 'img/kolibri-logo.png'%}"></img></td>
                                 <td class="intro-heading">Kolibri</td>
@@ -77,7 +74,7 @@
                             </div>
                         </div>
 
-                        <table>
+                         <table id="above-the-fold">
                             <tr>
                                 <td class="intro-heading3">Brought to you by Learning Equality</td>
                                 <td class="intro-heading3-logo"> <img src="{% static 'img/le-logo-s.png'%}"></img></td>
@@ -98,9 +95,16 @@
                             </div>
                         </div>
                           
-                        <div class="intro-btn"> 
-                            <center><a class="btn" id="igg_btn"  href="https://learningequality.org/r/indiegogo-redirect">Make a Donation</a>
-                            <a class="btn" id="igg_btn"  href="https://github.com/learningequality/kolibri">Follow our Progress</a></center>
+                        <div class="row intro-btn"> 
+                            <center>
+                            <div class="col-md-6 col-sm-12">
+                                <a class="btn" id="igg_btn" target="_blank" href="https://learningequality.org/r/indiegogo-redirect">Make a Donation</a>
+                            </div>
+
+                            <div class="col-md-6 col-sm-12">
+                                <a class="btn" id="igg_btn"  target="_blank" href="https://github.com/learningequality/kolibri">Follow our Progress</a>
+                            </div>
+                            </center>
                         </div>
                     </div>
                 </div>
@@ -125,9 +129,6 @@
 
         <!-- FLE how it works -->
         <section id="fle_how" class="row">
-            <center class="fle_title">
-                <h1>HOW WILL IT WORK?</h1>
-            </center>
             {% include "main/partials/_kickstarter_how.html" %}
         </section>
 
