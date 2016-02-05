@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="{% static 'css/_kickstarter_quote.css' %}">
     <link rel="stylesheet" href="{% static 'css/_kickstarter_mobile.css' %}?asdfghjkl">
     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
-    <!-- <link rel="stylesheet" href="{% static 'css/igg_integration.css' %}"> -->
 
     <!-- Custom Fonts -->
 
@@ -60,26 +59,38 @@
                 <!---Kolibri Intro-->
                 <div class="intro-text">
                     <div class="container intro">
-                                    <!--<span class="hidden-xs hidden-sm" style="font-weight: 100; top:-8px; position: relative;">|</span>--> 
-                       <table id="above-the-fold">
-                            <tr >
-                                <td class="intro-logo"><img src="{% static 'img/kolibri-logo.png'%}"></img></td>
-                                <td class="intro-heading">Kolibri</td>
-                            </tr>
-                        </table>
+                        <center> 
+                            <div class="row kolibri-header-section">
+                                <!--<div class="col-xs-4 intro-logo">
+                                    <img src="{% static 'img/kolibri-logo.png'%}"></img>
+                                </div>
+                                <div class="col-xs-8 intro-heading">
+                                    Kolibri
+                                </div>-->
+                                <div class="col-xs-12 intro-heading">
+                                    <img src="{% static 'img/kolibri-logo.png'%}"></img>
+                                    Kolibri
+                                </div>
+                            </div>
+                        </center>
 
                         <div class="row">
                             <div class="col-xs-12 intro-heading2">
                                 The offline app for universal education
                             </div>
                         </div>
-
-                         <table id="above-the-fold">
-                            <tr>
-                                <td class="intro-heading3">Brought to you by Learning Equality</td>
-                                <td class="intro-heading3-logo"> <img src="{% static 'img/le-logo-s.png'%}"></img></td>
-                            </tr>
-                        </table>
+                                    <!--<span class="hidden-xs hidden-sm" style="font-weight: 100; top:-8px; position: relative;">|</span>--> 
+                        <center> 
+                           <div class="row fle-header-section">
+                                 <div class="col-xs-6 fle-header-top">
+                                    Brought to you by
+                                </div>
+                                <div class="col-xs-6 fle-header-bottom">
+                                    Learning Equality
+                                     <img src="{% static 'img/le-logo-s.png'%}"></img>
+                                </div>
+                            </div>
+                        </center>
 
                         <div class="row">
                            <center>
@@ -129,6 +140,7 @@
 
         <!-- FLE how it works -->
         <section id="fle_how" class="row">
+            
             {% include "main/partials/_kickstarter_how.html" %}
         </section>
 
@@ -148,7 +160,7 @@
         </section>
 
         <!-- FLE History Section -->
-        <section id="fle_timeline" class="row">
+      <!--  <section id="fle_timeline" class="row">
             <center class="fle_title">
                 <h1>WHO ARE WE?</h1>
                 <h2>We're the team that built <img src="{% static 'img/kickstarter/timeline/ka-lite-logo.png' %}"></h2>
@@ -162,12 +174,12 @@
 
             <div id="desktop-timeline"></div>
 
-        </section>
+        </section>-->
 
         <!-- FLE Quote Section -->
-        <section id="fle_quote" class="hidden-xs">
+        <!--<section id="fle_quote" class="hidden-xs">
             {% include "main/partials/_kickstarter_quote.html" %}
-        </section>
+        </section>-->
 
 
         <!-- Contact Section -->

@@ -348,28 +348,41 @@ header {
   top: 14%;
 }
 .intro {
-  margin-top: 10%;
   max-width: 1000px;
   text-align:center;
-  margin-bottom:7px;
+  margin: 10% auto 7px;
 }
 
-.intro-logo img{
-  float:right;
-  max-width:90px;
+/*.intro-logo img{
   position:relative;
-  padding-right:10px;
-}
+  float:right;
+  bottom:8px;
+  width:80px;
+  left:25px;
+  }
+
+.intro-logo{
+  display:inline-block;
+}*/
 
 .intro-heading {
+  text-align:left;
   color:#957fb3;
   font-family: "Montserrat";
-  max-width: 1000px;
   font-size: 80px;
   line-height: 56px;
   position: relative;
-  z-index: -1;
-  text-align: left;
+  display:inline-block;
+}
+
+
+.intro-heading img{
+  width:80px;
+  margin-bottom:20px;
+}
+
+.kolibri-header-section{
+  width:45%;
 }
 
 /*span.hidden-xs.hidden-sm {
@@ -398,21 +411,23 @@ header {
   margin:auto;
 }
 
-.intro-heading3{
+.fle-header-top{
   color: #8c8c8c;
-  z-index: -1;
   position: relative;
   font-size: 18px;
   font-family: "Open Sans";
-  max-width: 1000px;
-  text-align:left;
+  text-align: right;
 }
-
-.intro-heading3-logo img{
-  float:right;
-  max-width:25px;
-  position:relative;
-  left:5px;
+.fle-header-bottom{
+  color: #8c8c8c;
+  position: relative;
+  font-size: 18px;
+  font-family: "Open Sans";
+  text-align:left;
+  left:-25px;
+}
+.fle-header-bottom img{
+  width:20px;
 }
 
 /*coming soon banner*/
