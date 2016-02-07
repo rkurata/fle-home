@@ -1,39 +1,32 @@
-/* Vectorized Video */
-@media (max-width: 750px) {
-  #canvas, .upper-canvas, .canvas-container {
-    width: 100vw !important;
-    height: auto !important;
-  }
-  .vector-description {
-    padding: 0 25px !important;
-  }
-  .modal-body {
-    padding: 0 !important;
-  }
-  #button-wrapper {
-    margin-top: 58vw !important;
-  }
-  #mark {
-    position: relative;
-    top: 58vw;
-  }
-}
-
-
 #feature-container {
   height: 755px;
   display: block;
   overflow: visible;
   background: white;
   position: relative;
+  margin-top:8%;
+  margin-bottom:20%;
 }
-
+.hardware-bullet-header{
+  margin-bottom:5%;
+  margin-left:3%;
+}
+.hardware-img img{
+  width:141px;
+}
+.hardware-txt{
+  margin-left:-21%;
+  margin-top:-1.2%;
+}
+.hardware-txt h3{
+  margin-top:-5px;
+}
 #feature-container #tile-container {
   padding: 0;
   background-color: #fff;
   background-size: cover;
 }
-.feature-space div {
+/*.feature-space div {
   text-align: center;
   position: relative;
   top: 15%;
@@ -60,12 +53,11 @@ span.slogan {
 .feature-space {
   background: #8670A1;
   min-height: 750px;
-  /*height: 100%;*/
-}
+}*/
 .feature-tile {
   min-height: 375px;
-  border: 3px solid #8670A1;
-  padding-top: 5%;
+  border: 3px solid #516e89;
+  padding-top: 3%;
   background: transparent;
   transition: background 0.3s;
   -webkit-transition: background 0.3s;
@@ -83,7 +75,7 @@ span.slogan {
   font-size: 21px;
 }
 .feature-tile:hover {
-  background: rgba(134, 112, 161, 0.6);
+  background: rgba(81, 110, 137, 0.6);
   transition: background 0.3s;
   -webkit-transition: background 0.3s;
 }
@@ -107,25 +99,39 @@ span.slogan {
 .tile-image {
   height: 200px;
 }
-.first-tile {
+/*.first-tile {
   border-left: none;
 }
 .last-tile {
   border-right: none;
+}*/
+.middle-tile{
+  border-left:none;
+  border-right:none;
 }
 .top-row .feature-tile {
-  border-top: none;
-}
-.bottom-row .feature-tile {
   border-bottom: none;
 }
+/*.bottom-row .feature-tile {
+  border-bottom: none;
+}*/
+#ka-lite {
+  background: url('../img/kickstarter/portfolio/ka.png') no-repeat center center;
+  transition: background 0.2s;
+  -webkit-transition: background 0.2s;
+}
+.feature-tile:hover #ka-lite {
+  background: url('../img/kickstarter/portfolio/ka-hover.png') no-repeat center center;
+  transition: background 0.2s;
+  -webkit-transition: background 0.2s;
+}
 #out-of-box {
-  background: url('../img/kickstarter/portfolio/out-of-box.png') no-repeat center center;
+  background: url('../img/kickstarter/portfolio/run.png') no-repeat center center;
   transition: background 0.2s;
   -webkit-transition: background 0.2s;
 }
 .feature-tile:hover #out-of-box {
-  background: url('../img/kickstarter/portfolio/out-of-box-hover.png') no-repeat center center;
+  background: url('../img/kickstarter/portfolio/run-hover.png') no-repeat center center;
   transition: background 0.2s;
   -webkit-transition: background 0.2s;
 }
@@ -148,6 +154,42 @@ span.slogan {
   background: url('../img/kickstarter/portfolio/vector-hover.png') no-repeat center center;
   transition: background 0.2s;
   -webkit-transition: background 0.2s;
+}
+#cc {
+  background: url('../img/kickstarter/portfolio/out-of-box.png') no-repeat center center;
+  transition: background 0.2s;
+  -webkit-transition: background 0.2s;
+}
+.feature-tile:hover #cc {
+  background: url('../img/kickstarter/portfolio/out-of-box-hover.png') no-repeat center center;
+  transition: background 0.2s;
+  -webkit-transition: background 0.2s;
+}
+.content-curation-img{
+  height:350px;
+  background-image:url('../img/kickstarter/portfolio/tablet.png'), url('../img/kickstarter/portfolio/content_curation.gif');
+  background-position: center center, center center;
+  background-repeat: no-repeat;
+  background-size:425px, 327px;
+}
+.numbers{
+  padding:0 90px;
+  background-color:#0fj;
+  margin-top:15px;
+  margin-bottom:15px;
+}
+.number-text{
+  margin-top:8px;
+}
+.number{
+  background-color:#516e89;
+  border-radius: 50%;
+  behavior: url(PIE.htc);
+  width:50px;
+  height: 50px;
+  padding-top:7px;
+  font-size:25px;
+  color:#fff;
 }
 #sync {
   background: url('../img/kickstarter/portfolio/sync.png') no-repeat center center;

@@ -353,18 +353,6 @@ header {
   margin: 10% auto 7px;
 }
 
-/*.intro-logo img{
-  position:relative;
-  float:right;
-  bottom:8px;
-  width:80px;
-  left:25px;
-  }
-
-.intro-logo{
-  display:inline-block;
-}*/
-
 .intro-heading {
   text-align:left;
   color:#957fb3;
@@ -453,7 +441,7 @@ header {
 }
 
 /* LAST CALL TO ACTION */
-section#contact {
+/*section#contact {
   background: url('../img/kickstarter/cambodia.jpg');
   background-position: left 10%;
   -webkit-background-size: cover;
@@ -467,7 +455,7 @@ section#contact {
   position: relative;
   top: -20px;
   z-index: 5;
-}
+}*/
 section#contact .section-heading {
   color: white;
   margin-bottom: 10px;
