@@ -1,5 +1,5 @@
 #feature-container {
-  height: 755px;
+  height: 850px;
   display: block;
   overflow: visible;
   background: white;
@@ -26,34 +26,60 @@
   background-color: #fff;
   background-size: cover;
 }
-/*.feature-space div {
-  text-align: center;
-  position: relative;
-  top: 15%;
+/*learn more button for interactive hover image*/
+.interactive-btn #igg_btn{
+  margin-top:6%;
+  border: 2px solid #516e89;
+  color:#516e89;
+  width:600px;
 }
-.feature-space img {
-  width: 55%;
-  margin-top: 22%;
+.interactive-btn #igg_btn:hover{
+  background-color:#516e89;
+  color:#fff;
 }
-span#kolibri-name {
-  font-size: 70px;
-  display: block;
-  text-align: center;
-  position: relative;
-  top: 16%;
-  color: white;
+.hover-img{
+  background-image:url("../img/kickstarter/portfolio/interactive/nalanda-how-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:100%;
+  padding:37%;
+  color:#fff;
+  font-size:20px;
+  margin-bottom:5%;
 }
-span.slogan {
-  top: 50px;
-  position: relative;
-  color: white;
-  font-size: 31px;
-  margin: 0 5px;
+.instructions{
+  background-color:#fff;
+  color:#000;
+  opacity: .65;
+  border-radius:7px;
+  text-align:center;
+  width:320%;
+  padding:7px 0px;
+  margin-top:-133%;
+  margin-left:-110%;
 }
-.feature-space {
-  background: #8670A1;
-  min-height: 750px;
-}*/
+.coach-hover, .channel-hover, .sync-hover{
+  background-image:url("../img/kickstarter/portfolio/interactive/hover.png");
+  background-size:50px;
+  border-radius: 50%;
+  behavior: url(PIE.htc);
+  width:50px;
+  height: 50px;
+}
+.coach-hover{
+  margin-top:-60%;
+  margin-left:22%;
+}
+.channel-hover{
+  margin-top:-1%;
+  margin-left:54%;
+}
+.sync-hover{
+  margin-top:29%;
+  margin-left:57%;
+}
+/*end interactive section*/
+
 .feature-tile {
   min-height: 375px;
   border: 3px solid #516e89;
@@ -174,7 +200,6 @@ span.slogan {
 }
 .numbers{
   padding:0 90px;
-  background-color:#0fj;
   margin-top:15px;
   margin-bottom:15px;
 }

@@ -13,10 +13,9 @@
   background-size: cover;
   background-position: center center;
   min-height: 838px;
-  height: 100%;
 }
 .puzzle-bullet-header{
-  margin-top:-8%;
+  margin-top:-5%;
   margin-right:6%;
 }
 
@@ -35,7 +34,7 @@
   margin-top:-8px;
 }
 #how-image .row {
-  height: 50%;
+  /* height: 50%; */
 }
 #how-image .row div {
   margin-top: 70px;

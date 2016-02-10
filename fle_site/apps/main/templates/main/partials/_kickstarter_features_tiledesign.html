@@ -5,7 +5,7 @@
 <div class="container-fluid" id="feature-container">
 	<div class="row hardware-bullet-header">
 		<div class="col-xs-4 hardware-img">
-			<img src="{% static 'img/kickstarter/portfolio/software.png'%}"></img>
+			<img src="{% static 'img/kickstarter/portfolio/software.png'%}">
 		</div>
 		<div class="col-xs-8 hardware-txt">
 			<h1>Software</h1>
@@ -72,6 +72,13 @@
 			</a>
 		</div>
 	</div>
+	<div class="interactive-btn">
+		 <center>
+		 	<a class="btn" id="igg_btn"  target="_blank" href="#portfolioModal6" data-toggle="modal">
+		 	See how these features are used in a real-life example
+			 </a>
+		</center>
+	</div>
 </div>
 
 
@@ -129,35 +136,6 @@
 	        </div>
 	    </div>
     </div>
-
-    <!-- Portfolio Modal 1 -->
-   <!-- <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    	<div class="modal-dialog" role="document">
-	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </div>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="my_col">
-	                        <div class="modal-body">
-	                            <h2>Content Curation</h2>
-	                            <p class="item-intro text-muted">We're building a prototype of a tool that will allow organizations to upload and curate their own educational content. Anyone can bundle and distribute their content into custom created channels, allowing communities to align content with local curricular standards to best serve the needs of their learners.</p>
-	                            <img class="img-responsive img-centered" src="{% static 'img/kickstarter/portfolio/content_curation.gif' %}" alt="">
-	                            <p class="big"><mark>&#9733 Remix existing channels:  </mark>   Kolibri will allow educational content producers and organizations to have the freedom to combine content from various channels to make a broad library of high quality and locally relevant educational content available to offline learners. For example, an instructor could create a new channel by combining math content from the Khan Academy channel and geography content from the OpenStax channel, allowing them to easily integrate a variety of learning material to customize their curriculum.</p>
-	                            <p class="big"><mark>&#9733 Upload new content:  </mark>   There are times when these content producers have come up with their own learning material that they have found works effectively. When this happens, they can upload their content to Kolibri, and then choose to make their new channel available to others who may find it useful for their own contexts.</p>
-	                            <p class="big"><mark>&#9733 Integrate new and existing content:  </mark>   Kolibri will allow educational content producers and organizations to combine existing content with their own. If an organization like UNICEF knows from experience that certain math lessons are favored by students, and they have also noticed that some of their own original exercises are effective, they can create a new channel and combine their content with pre-existing content from another channel to optimize their curriculum.</p>
-	                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-    </div>-->
 
     <!-- Portfolio Modal 2 -->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
@@ -326,3 +304,38 @@
 	        </div>
 	    </div>
     </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    	<div class="modal-dialog" role="document">
+	        <div class="modal-content">
+	            <div class="close-modal" data-dismiss="modal">
+	                <div class="lr">
+	                    <div class="rl">
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="container">
+	                <div class="row">
+	                    <div class="my_col">
+	                        <div class="modal-body">
+	                            <!-- Project Details Go Here -->
+	                            <div class="hover-img">
+	                            	<div class="instructions">
+	                            		<p>Hover over the circles to learn more about Kolibri's features!</p>
+	                            	</div>
+	                            </div>	
+	                            
+	                            <div class="coach-hover" data-toggle="tooltip" data-placement="right" title="With coach reports, teachers can identify which students are struggling and need extra help."></div>
+
+	                            <div class="channel-hover" data-toggle="tooltip" data-placement="right" title="This student is learning from a customized channel, created specifically to meet his learning needs."></div>
+
+	                            <div class="sync-hover" data-toggle="tooltip" data-placement="right" title="These students are able to share content across their devices using a local wi-fi network."></div>
+								
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+    </div>
+

@@ -1,20 +1,24 @@
 /* Mobile and Responsive Styles */
 @media(min-width:1440px){
 	.puzzle-bullet-header{
-		margin-left:-20%;
+		margin-left:-8%;
 	}
 	.hardware-bullet-header{
-		margin-left:-1%;
+		margin-left:4%;
 	}
 }
 @media(max-width:1440px){
 	.puzzle-bullet-header{
-		margin-left:-10%;
+		margin-left:-7%;
 	}
 	.hardware-bullet-header{
-		margin-left:6%;
+		margin-left:4%;
+	}
+	.channel-hover{
+		margin-top:-3%;
 	}
 }
+
 @media screen and (max-width: 1281px) {
 	.top-box img,
 	.bottom-box img {
@@ -70,12 +74,15 @@
 	#fle_timeline .fle_title h1 {
 		font-size: 50px;
 	}
+	/*.sync-hover{
+		margin-top:38%;
+	}*/
 }
 
 @media screen and (min-width: 1200px) {
   #donor_carousel {
     margin-right: 10vw;
-  }
+  }	
 }
 
 @media (max-width: 1200px){
@@ -89,17 +96,23 @@
   	padding: 10px 20px;
   }
   .puzzle-bullet-header{
-  	margin-left:-6%;
+  	margin-left:1%;
   }
   .hardware-img{
   	padding-right:34%;
+  }
+  .channel-hover{
+		margin-top:-4%;
   }
 }
 
 @media screen and (max-width: 1060px) {
 	.puzzle-bullet-header{
-		margin-left:-1%;
+		margin-left:3%;
 	}
+	.hardware-bullet-header{
+  		margin-left:4%;
+    }
 	.hardware-txt{
 		left:5%;
 	}
@@ -165,6 +178,10 @@
 		padding-top: 20px;
 		position: relative;
 		z-index: 99999;
+	}
+	.instructions{
+		width:280%;
+		padding-left:20%;
 	}
 	.sticky-signup2 span {
 		font-size: 20px;
@@ -342,6 +359,9 @@
 	}
 	#contact {
 		background-position: center center !important;
+	}
+	.interactive-btn{
+		display:none;
 	}
 }
 
@@ -527,7 +547,7 @@
 	}
 	/*offline*/
 	.puzzle-bullet-header{
-		margin-left:-8%;
+		margin-left:-5%;
 	}
 	.countdown {
 		zoom: 0.8;
@@ -607,7 +627,7 @@
 @media screen and (max-width: 590px) {
 	/*offline*/
 	.puzzle-bullet-header{
-		margin-left:-1%;
+		margin-left:1%;
 	}
   .container {
     padding-left: 0 !important;
