@@ -18,23 +18,17 @@
   margin-top:-5%;
   margin-right:6%;
 }
-
 .bullet-img img{
   float:right;
   margin-top:4px;
 }
-
 .bullet-txt{
   color:#000;
   text-align:left;
   margin-left:-40px;
 }
-
 .bullet-txt h3{
   margin-top:-8px;
-}
-#how-image .row {
-  /* height: 50%; */
 }
 #how-image .row div {
   margin-top: 70px;

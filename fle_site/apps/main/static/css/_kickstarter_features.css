@@ -9,13 +9,13 @@
 }
 .hardware-bullet-header{
   margin-bottom:5%;
-  margin-left:3%;
 }
 .hardware-img img{
   width:141px;
+  margin-left:6%;
 }
 .hardware-txt{
-  margin-left:-21%;
+  margin-left:-20.5%;
   margin-top:-1.2%;
 }
 .hardware-txt h3{
@@ -61,8 +61,6 @@
 .coach-hover, .channel-hover, .sync-hover{
   background-image:url("../img/kickstarter/portfolio/interactive/hover.png");
   background-size:50px;
-  border-radius: 50%;
-  behavior: url(PIE.htc);
   width:50px;
   height: 50px;
 }

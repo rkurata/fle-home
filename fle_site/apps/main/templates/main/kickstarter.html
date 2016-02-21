@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="{% static 'css/_kickstarter_how.css' %}">
     <link rel="stylesheet" href="{% static 'css/_kickstarter_quote.css' %}">
     <link rel="stylesheet" href="{% static 'css/_kickstarter_mobile.css' %}?asdfghjkl">
+    <link rel="stylesheet" href="{% static 'css/_kickstarter_cc.css' %}">
+
     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
      <!-- Bootstrap -->
     
@@ -150,8 +152,12 @@
             {% include "main/partials/_kickstarter_features_tiledesign.html" %}
         </section>
 
+        <section id="content-curation" class="row">
+            {% include "main/partials/_kickstarter_cc.html" %}
+        </section>
+
         <!-- FLE History Section -->
-      <!--  <section id="fle_timeline" class="row">
+        <section id="fle_timeline" class="row">
             <center class="fle_title">
                 <h1>WHO ARE WE?</h1>
                 <h2>We're the team that built <img src="{% static 'img/kickstarter/timeline/ka-lite-logo.png' %}"></h2>
@@ -165,12 +171,12 @@
 
             <div id="desktop-timeline"></div>
 
-        </section>-->
+        </section>
 
         <!-- FLE Quote Section -->
-        <!--<section id="fle_quote" class="hidden-xs">
+        <section id="fle_quote" class="hidden-xs">
             {% include "main/partials/_kickstarter_quote.html" %}
-        </section>-->
+        </section>
 
 
         <!-- Contact Section -->
