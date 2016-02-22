@@ -178,6 +178,13 @@
 	}
 }
 
+/*to fix overlapping sections*/
+@media(width:991px){
+	#feature-container{
+		margin-bottom:170% !important;
+	}
+}
+
 @media screen and (min-width: 990px) {
 	.sticky-signup2 {
 		display: none;
@@ -458,6 +465,8 @@
 		margin-left:18% !important;
 	}
 }
+
+
 @media (max-width: 900px){
 	.fle-header-top, .fle-header-bottom{
 		font-size:14px;
