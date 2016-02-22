@@ -2,11 +2,9 @@
 .puzzle-intro{
   margin-bottom:7%;
 }
-
 .pieces{
   margin-bottom:5%;
 }
-
 .puzzle-intro h2{
   font-weight: 300;
   font-size: 26px;
@@ -16,42 +14,17 @@
   max-width: 1000px;
   margin: auto;
 }
-
 .puzzle-text{
   margin-top:100px;
   margin-bottom:50px;
 }
-
-
 .puzzle-piece img{
   height:130px;
   float:center;
 }
-
 .learn-more-btn{
   padding-top:5%;
   margin-top:5%;
 }
 
-/*responsive*/
 
-@media (max-width: 1200px) {
-  .puzzle-piece img{
-    /*width:170px;*/
-    float:center;
-    margin-bottom:10px;
-  }
-  .puzzle-intro h2{
-    font-size:22px;
-  }
-}
-@media (max-width: 765px) {
-  .puzzle-piece img{
-   /* height:100px;*/
-    float:center;
-    margin-bottom:10px;
-  }
-  .puzzle-intro h2{
-    font-size:20px;
-  }
-}
