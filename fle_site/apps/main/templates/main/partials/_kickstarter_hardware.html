@@ -1,0 +1,69 @@
+{% load staticfiles %}
+
+<div class="container-fluid">
+    <div class="row hardware-section">
+        <div class="row hardware-bullet-header">
+			<div class="col-xs-4 hardware-img">
+				<img src="{% static 'img/kickstarter/hardware/hardware.png'%}">
+			</div>
+			<div class="col-xs-8 hardware-txt">
+				<h1>Low-Cost Hardware</h1>
+				<h3>What tools do you need to use Kolibri?</h3>
+			</div>
+        </div>
+
+        <div class="row">
+	        <div class="col-md-4 col-sm-6 device-card">
+		        <div class="flip"> 
+			        <div class="card"> 
+			            <div class="face front"> 
+			                <h3>Devices</h3>
+			                	<img id="card-img" src="{% static 'img/kickstarter/hardware/devices.png'%}">
+			                <p>Learn More</p>
+			            </div> 
+			            <div class="face back"> 
+			            	<h3>Devices</h3>
+			            	<img id="img-back" src="{% static 'img/kickstarter/hardware/devices-back.png'%}">
+			                <p>Kolibri is being built fast enough to run on the slowest hardware, on a diverse range of low-cost, low-power devices, which are some of the main barriers to learning that our users face.</p>
+			            </div> 
+			        </div> 
+			    </div> 
+			 </div>
+
+			 <div class="col-md-4 col-sm-6 pi-card">
+		        <div class="flip"> 
+			        <div class="card"> 
+			            <div class="face front"> 
+			                <h3>Raspberry Pi</h3>
+			                	<img id="card-img" src="{% static 'img/kickstarter/hardware/pi.png'%}">
+			                <p>Learn More</p>
+			            </div> 
+			            <div class="face back"> 
+			            	<h3>Raspberry Pi</h3>
+			            	<img id="pi-img-back" src="{% static 'img/kickstarter/hardware/pi-back.png'%}">
+			                <p>Raspberry Pi creates a local network that Kolibri’s server can run on.</p>
+			            </div> 
+			        </div> 
+			    </div> 
+			 </div>
+
+			 <div class="col-md-4 col-sm-6 usb-card">
+		        <div class="flip"> 
+			        <div class="card"> 
+			            <div class="face front"> 
+			                <h3>USB Drive</h3>
+			                	<img id="card-img" src="{% static 'img/kickstarter/hardware/usb.png'%}">
+			                <p>Learn More</p>
+			            </div> 
+			            <div class="face back"> 
+			            	<h3>USB Drive</h3>
+			            	<img id="usb-img-back" src="{% static 'img/kickstarter/hardware/usb-back.png'%}">
+			                <p>A USB drive enables what we call “human networks”, or networks of people who can share Kolibri’s content with each other wirelessly, through USB drives.</p>
+			            </div> 
+			        </div> 
+			    </div> 
+			 </div>
+		</div>
+  
+    </div>
+</div>

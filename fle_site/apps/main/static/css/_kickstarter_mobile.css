@@ -2,11 +2,11 @@
 @media(min-width:1440px){
 	/*offline section*/
 	.puzzle-bullet-header{
-		margin-left:-8%;
+		margin-left:-5%;
 	}
-	/*hardware section*/
-	.hardware-bullet-header{
-		margin-left:4%;
+	/*software section*/
+	.software-bullet-header{
+		margin-left:2%;
 	}
 	/*curation section*/
 	.curation-bullet-header{
@@ -15,13 +15,17 @@
 	.curation-txt{
 		  left:-2%;
 	}
+	/*hardware section*/
+	.hardware-bullet-header{
+		margin-left:-24.5%;
+	}
 }
 @media(max-width:1440px){
 	.puzzle-bullet-header{
-		margin-left:-7%;
+		margin-left:-2%;
 	}
-	.hardware-bullet-header{
-		margin-left:4%;
+	.software-bullet-header{
+		margin-left:2.5%;
 	}
 	.channel-hover{
 		margin-top:-3%;
@@ -32,6 +36,10 @@
 	}
 	.curation-txt{
 		  left:-2%;
+	}
+	/*hardware section*/
+	.hardware-bullet-header{
+		margin-left:-24%;
 	}
 }
 
@@ -67,11 +75,11 @@
 	.fle_title h3 {
 		font-size: 20px;
 	}
-	/*offline section*/
-	.hardware-bullet-header{
-		margin-left:5%;
+	/*software section*/
+	.software-bullet-header{
+		margin-left:1.5%;
 	}
-	 .hardware-txt{
+	 .software-txt{
   		left:2%;
   }
 	#how-1, #how-2, #how-3 {
@@ -92,24 +100,21 @@
 	}
 	/*curation secton*/
 	.curation-bullet-header{
-		margin-left:-27%;
+		margin-left:-24.5%;
 	}
 	.curation-txt{
-		padding-left:2%;
+		padding-left:1%;
 	}
 	.cc-intro{
 		width:70%;
 	}
-}
-
-@media (max-width: 1200px) {
-  .puzzle-piece img{
-    float:center;
-    margin-bottom:10px;
-  }
-  .puzzle-intro h2{
-    font-size:22px;
-  }
+	/*hardware section*/
+	.hardware-bullet-header{
+		margin-left:-23.5%;
+	}
+	.hardware-txt{
+		padding-left:.5%;
+	}
 }
 
 @media screen and (min-width: 1200px) {
@@ -123,15 +128,27 @@
   	background-size:52%;
   }
   .intro-btn{
-  max-width:480px;  
+    max-width:480px;  
   }
   #igg_btn{
   	padding: 10px 20px;
   }
+  /*offline section*/
   .puzzle-bullet-header{
   	margin-left:1%;
   }
-  .hardware-img{
+  .puzzle-piece img{
+    float:center;
+    margin-bottom:10px;
+  }
+  .puzzle-intro h2{
+    font-size:22px;
+  }
+  /*features section*/
+  .software-bullet-header{
+  	margin-left:2%;
+  }
+  .software-img{
   	padding-right:10%;
   }
   .channel-hover{
@@ -139,7 +156,7 @@
   }
   /*curation section*/
   .curation-bullet-header{
-  	margin-left:-22%;
+  	margin-left:-23.5%;
   }
   .curation-txt{
   	padding-left:1%;
@@ -147,16 +164,20 @@
   .cc-intro{
   	margin-left:19.5% !important;
   }
+  /*hardware*/
+   .hardware-bullet-header{
+  	margin-left:-22.5%;
+  }
 }
 
 @media screen and (max-width: 1060px) {
 	.puzzle-bullet-header{
-		margin-left:3%;
+		margin-left:7%;
 	}
-	.hardware-bullet-header{
-  		margin-left:4%;
+	.software-bullet-header{
+  		margin-left:2.5%;
     }
-	.hardware-txt{
+	.software-txt{
 		left:5%;
 	}
 	.sticky-mailchimp {
@@ -168,13 +189,16 @@
 		margin-left:-21%;
 	}
 	.curation-txt{
-		padding-left:2.5%;
+		padding-left:1.5%;
 	}
 	.cc-intro{
 		margin-left:22% !important;
 	}
 	.numbers-cc{
 		margin-left:15% !important;
+	}
+	.hardware-bullet-header{
+		margin-left:-19.5%;
 	}
 }
 
@@ -215,13 +239,13 @@
   }
 	/*offline section*/
 	.puzzle-bullet-header{
-		margin-left:-19%;
+		margin-left:-17%;
 	}
 	/*features section*/
-	.hardware-bullet-header{
-		margin-left:-1%;
+	.software-bullet-header{
+		margin-left:-3%;
 	}
-	.hardware-txt{
+	.software-txt{
 		left:6%;
 	}
   .how-explanation{
@@ -430,11 +454,20 @@
 	.curation-bullet-header{
 		margin-left:-25%;
 	}
+	.curation-txt{
+		padding-left:2%;
+	}
 	.cc-intro{
 		margin-left:17% !important;
 	}
 	.numbers-cc{
 		margin-left:10% !important;
+	}
+	.hardware-bullet-header{
+		margin-left:-24%;
+	}
+	.hardware-txt{
+		padding-left:1%;
 	}
 }
 
@@ -455,7 +488,7 @@
 	}
 	/*offline*/
 	.puzzle-bullet-header{
-		margin-left:-18%;
+		margin-left:-15%;
 	}
 	/*curation section*/
 	.curation-bullet-header{
@@ -463,6 +496,9 @@
 	}
 	.cc-intro{
 		margin-left:18% !important;
+	}
+	.hardware-bullet-header{
+		margin-left:-23%;
 	}
 }
 
@@ -475,21 +511,24 @@
 	.puzzle-bullet-header{
 		margin-left:-15%;
 	}
-	.bullet-txt h3, .hardware-txt h3, .curation-txt h3{
+	.bullet-txt h3, .software-txt h3, .curation-txt h3, .hardware-txt h3{
 		font-size:20px;
 	}
-	.hardware-txt{
+	.software-txt{
 		right:6%;
 	}
 	/*curation section*/
 	.curation-bullet-header{
-		margin-left:-22%;
+		margin-left:-24%;
 	}
 	.cc-intro{
 		margin-left:19% !important;
 	}
 	.numbers-cc{
 		margin-left:11% !important;
+	}
+	.hardware-bullet-header{
+		margin-left:-22%;
 	}
 }
 
@@ -505,14 +544,25 @@
 	}
 	/*offline*/
 	.puzzle-bullet-header{
-		margin-left:-14%;
+		margin-left:-11%;
+	}
+	.software-txt{
+		width:40%;
+		margin-left:-15%;
 	}
 	/*curation*/
 	.curation-txt{
-		padding-left:3.5%;
+		padding-left:2.5%;
+	}
+	.curation-bullet-header{
+		margin-left:-21.5%;
 	}
 	.cc-intro{
 		margin-left:20% !important;
+	}
+	/*hardware section*/
+	.hardware-bullet-header{
+		margin-left:-20%;
 	}
 }
 
@@ -560,22 +610,25 @@
   }
   /*offline*/
   .puzzle-bullet-header{
-  	margin-left:-11%;
+  	margin-left:-9%;
   }
   /*features*/
-  .hardware-img{
-  	padding-right:36%;
+  .software-img{
+  	margin-left:-.5%;
   }
   /*curation section*/
   .curation-bullet-header{
   	margin-left:-20%;
   }
   .cc-intro{
-		margin-left:21% !important;
-	}
-	.numbers-cc{
-		margin-left:12% !important;
-	}
+	margin-left:21% !important;
+  }
+  .numbers-cc{
+	margin-left:12% !important;
+  }
+  .hardware-bullet-header{
+  	margin-left:-18%;
+  }
 }
 
 @media screen and (height: 768px) { /*target ipad*/
@@ -631,11 +684,15 @@
 	}
 	/*offline*/
 	.puzzle-bullet-header{
-		margin-left:-10%;
+		margin-left:-7%;
+	}
+	.software-txt{
+		margin-left:-12%;
+		width:60%;
 	}
 	/*curation section*/
 	.curation-bullet-header{
-		margin-left:-19%;
+		margin-left:-20%;
 	}
 	 .cc-intro{
 		margin-left:22% !important;
@@ -685,11 +742,11 @@
 	}
 	/*curation section*/
 	.curation-bullet-header{
-		margin-left:-16%;
+		margin-left:-18%;
 		width:10%;
 	}
 	.curation-txt{
-		padding-left:4.5%;
+		padding-left:2%;
 	}
 	.curation-txt h3{
 		font-size:18px;
@@ -700,10 +757,15 @@
 	.numbers-cc{
 		margin-left:16% !important;
 	}
+	.hardware-bullet-header{
+		margin-left:-16%;
+	}
+	.hardware-txt{
+  	   width:49%;
+  }
 }
 
 /* Media Query Min-Width 700px */
-
 @media (min-width: 700px) {
   .email_input_k {
     outline: none;
@@ -751,15 +813,15 @@
 	}
 	/*offline*/
 	.puzzle-bullet-header{
-		margin-left:-4%;
+		margin-left:-1%;
 	}
 	/*features*/
-	.hardware-img{
+	.software-img{
 		margin-right:3%;
 	}
 	/*curation section*/
 	.curation-txt{
-		padding-left:5%;
+		padding-left:3%;
 		width:50%;
 	}
 	.curation-txt h1{
@@ -767,6 +829,13 @@
 	}
 	.cc-intro{
 		width:65%;
+	}
+	.curation-bullet-header{
+		margin-left:-17%;
+	}
+	/*hardware section*/
+	.hardware-bullet-header{
+		margin-left:-14%;
 	}
 }
 
@@ -779,12 +848,18 @@
 		right:10%;
 		width:124%;
 	}
+	.hardware-txt h1{
+		font-size:33px;
+	}
+	.hardware-txt h3{
+		font-size:18px;
+	}
 }
 
 @media screen and (max-width: 590px) {
 	/*offline*/
 	.puzzle-bullet-header{
-		margin-left:1%;
+		margin-left:4%;
 	}
   .container {
     padding-left: 0 !important;
@@ -805,38 +880,59 @@
     width:60%;
   }
   /*offline section*/
-  .bullet-txt h1, .hardware-txt h1, .curation-txt h1{
+  .bullet-txt h1, .software-txt h1, .curation-txt h1, .hardware-txt h1{
   	font-size:30px;
   }
-  .bullet-txt h3, .hardware-txt h3, .curation-txt h3{
+  .bullet-txt h3, .software-txt h3, .curation-txt h3, .hardware-txt h3{
   	font-size:20px;
   }
-  .hardware-img{
+  .software-img{
   	margin-right:5%;
   	margin-top:4px;
+  }
+  .software-txt{
+  	margin-left:-10%;
+  	width:66%;
+  	margin-top:1.5%;
   }
   /*curation section*/
   .curation-bullet-header{
   	margin-left:-13%;
   }
   .curation-txt{
-  	padding-left:6%;
+  	padding-left:3%;
+  }
+  .curation-txt h3{
+  	margin-top:-5px;
   }
    .cc-intro{
 		margin-left:29% !important;
-	}
-	.numbers-cc{
+  }
+   .numbers-cc{
 		margin-left:18% !important;
-	}
+  }
+  .hardware-bullet-header{
+  	margin-left:-11%;
+  }
+  .hardware-txt h3{
+  	margin-top:-5px;
+  }
 }
+
+/*content curation breaks here*/ 
 @media (max-width:585px){
 	.number-cc{
-		margin-left:38% !important;
+		margin-left:25% !important;
 		margin-bottom:15px;
 	}
 	.number-text-cc{
-		width:130%;
-		margin-left:-8%;
+		width:195%;
+		margin-left:-64%;
+		margin-bottom:10%;
+	}
+	.cc-intro{
+		margin-left:1% !important;
+		width:100%;
 	}
 }
 
@@ -857,21 +953,29 @@
 		margin-left:5%;
 	}
 	.puzzle-bullet-header{
-		margin-left:1%;
+		margin-left:3%;
 		width:100%;
 		margin-top:-12%;
 	}
-	.hardware-img{
-		margin-right:6%;
+	.software-img{
+		margin-right:%;
 	}
 	/*curation section*/
 	.curation-bullet-header{
 		margin-left:-11%;
 	}
-	 .cc-intro{
-		margin-left:30.5% !important;
+	.curation-txt{
+		width:45%;
 	}
-
+	.hardware-bullet-header{
+		margin-left:-8.5%;
+	}
+	.hardware-txt{
+		width:46%;
+	}
+	.hardware-txt h1{
+		font-size:28px;
+	}
 }
 
 @media(max-width:520px){
@@ -879,33 +983,26 @@
 		margin-left:2%;
 	}
 	.puzzle-bullet-header{
-		margin-left:10px;
+		margin-left:6%;
 	}
-	.hardware-img{
+	.bullet-txt{
+		width:70%;
+	}
+	.software-img{
 		margin-right:8%;
 	}
 	/*curation section*/
-	.curation-txt h1{
+	.curation-txt h1, .hardware-txt h1{
 	 	font-size:26px;
 	}
-	.curation-txt h3{
+	.curation-txt h3, .hardware-txt h3{
 		font-size:15px;
-	}
-	.curation-txt{
-		padding-left:7%;
 	}
 	.curation-bullet-header{
 		margin-left:-10%;
 	}
-	 .cc-intro{
-		margin-left:32% !important;
-	}
-	.number-cc{
-		margin-left:44% !important;
-	}
-	.number-text-cc{
-		width:140%;
-		margin-left:-8%;
+	.hardware-bullet-header{
+		margin-left:-7%;
 	}
 }
 
@@ -921,14 +1018,13 @@
 	width: 30px;
 }
  /*offline secton*/
- .bullet-txt h1, .hardware-txt h1{
- 	font-size:20px;
+ .bullet-txt h1, .software-txt h1, .curation-txt h1, .hardware-txt h1{
+ 	font-size:26px;
  }
- .bullet-txt h3, .hardware-txt h3{
- 	font-size:13px;
+ .bullet-txt h3, .software-txt h3, .curation-txt h3, .hardware-txt h3{
+ 	font-size:16px;
  }
-
- .bullet-img img, .hardware-img img{
+ .bullet-img img, .software-img img{
  	width:100px;
  	margin-top:13px;
  }
@@ -936,11 +1032,15 @@
  	margin-top:-15%;
  	margin-left:-5%;
  }
- .hardware-img{
+ .software-img{
 		margin-right:1%;
 		margin-top:-4%;
 		padding-top:4px;
 	}
+ .software-txt{
+ 	margin-left:-15%;
+ 	margin-top:-2%;
+ }
  .number{
 		margin-left:38%;
 		margin-bottom:5%;
@@ -995,28 +1095,43 @@
   .curation-bullet-header{
   	margin-left:-18%;
   }
-  .curation-txt{
-  	padding-left:9%;
-  }
   .curation-img img{
-  	width: 130px;
+  	width: 120px;
+  }
+  .curation-txt{
+  	padding-left:4%;
   }
   .curation-txt h1{
 	font-size:22px;
+	margin-top:8px;
 	}
   .curation-txt h3{
 	margin-top:-5px;
 	font-size:15px;
 	}
-	 .cc-intro{
-		margin-left:26% !important;
-	}
-	.number-cc{
-		margin-left:32% !important;
+  	.number-cc{
+		margin-left:15% !important;
+		margin-bottom:15px;
 	}
 	.number-text-cc{
-		width:140%;
-		margin-left:-22%;
+		width:195%;
+		margin-left:-64%;
+		margin-bottom:10%;
+	}
+	.cc-intro{
+		margin-left:2% !important;
+		width:100%;
+	}
+	/*hardware*/
+	.hardware-img img{
+		width:130px;
+	}
+	.hardware-bullet-header{
+		margin-left:-16%;
+	}
+	.hardware-txt h1{
+		margin-top:8px;
+		font-size:24px;
 	}
 }
 
@@ -1034,8 +1149,14 @@
 		margin-top:-17%;
 		margin-left:-5px;
 	}
+	.bullet-txt h1{
+		font-size:24px;
+	}
+	.bullet-txt{
+		margin-left:-13%;
+	}
 	/*features*/
-	.hardware-img{
+	.software-img{
 		margin-right:3%;
 	}
 	.countdown {
@@ -1048,17 +1169,13 @@
 	}
 	/*curation section*/
 	.curation-bullet-header{
-		margin-left:-14%;
+		margin-left:-15.5%;
 	}
-	 .cc-intro{
-		margin-left:28% !important;
+	.hardware-bullet-header{
+		margin-left:-13%;
 	}
-	.number-cc{
-		margin-left:38% !important;
-	}
-	.number-text-cc{
-		width:160%;
-		margin-left:-22%;
+	.hardware-txt h1{
+		font-size:22px;
 	}
 }
 
@@ -1112,6 +1229,9 @@
 		margin-left:0px;
 		margin-top:-20%;
 	}
+	.software-txt{
+		margin-left:-13%;
+	}
 	/*features section content curation*/
 	 .number{
 		margin-left:34%;
@@ -1125,12 +1245,11 @@
 	.curation-bullet-header{
 		margin-left:-13%;
 	}
-	.number-cc{
-		margin-left:38% !important;
+	.hardware-bullet-header{
+		margin-left:-11%;
 	}
-	.number-text-cc{
-		width:160%;
-		margin-left:-26%;
+	.hardware-txt{
+		padding-left:3%;
 	}
 }
 
@@ -1141,40 +1260,43 @@
 	.puzzle-bullet-header{
 		margin-top:-15%;
 		width:100%;
+		margin-left:2%;
 	}
 	.bullet-txt{
-		left:-15px;
+		left:-2px;
 	}
-	.bullet-txt h1, .hardware-txt h1, .curation-txt h1{
+	.bullet-txt h1, .software-txt h1, .curation-txt h1, .hardware-txt h1{
 		font-size:20px;
 	}
-	.bullet-txt h3, .hardware-txt h3, .curation-txt h3{
+	.bullet-txt h3, .software-txt h3, .curation-txt h3, .hardware-txt h3{
 		font-size:12px;
 	}
-	
-	.hardware-txt{
+	.software-txt{
 		margin-top: -3%;
 	}
-	/*curation section*/
-	 .cc-intro{
-		margin-left:27% !important;
+	/*content curation*/
+	.cc-intro{
+		margin-left:0% !important;
+		width:100%;
 	}
 	.number-cc{
-		margin-left:36% !important;
+		margin-left:8% !important;
+		margin-bottom:15px;
 	}
-	.number-text-cc{
-		width:180%;
-		margin-left:-35%;
+	/*hardware*/
+	.hardware-bullet-header{
+		margin-left:-9%;
 	}
 }
+
 @media(max-width:368px){
 	.kolibri-header-section{
 		margin-left:22%;
 	}
 	.puzzle-bullet-header{
-		margin-left:3%;
+		margin-left:6%;
 	}
-	.hardware-img{
+	.software-img{
 		margin-right:5%;
 	}
 	/*curation section*/
@@ -1187,15 +1309,15 @@
 	.cc-section p{
       font-size:16px !important;
 	}
-	 .cc-intro{
-		margin-left:29% !important;
+	.number-text-cc{
+		width:250%;
+		margin-left:-90%;
 	}
-	.number-cc{
-		font-size:20px !important;
-		width:40px !important;
- 		height: 40px !important;
+	.hardware-bullet-header{
+		margin-left:-5%;
 	}
 }
+
 @media(max-width:345px){
 	.kolibri-header-section{
 		margin-left:18%;
@@ -1204,7 +1326,7 @@
 		width:110%;
 	}
 	/*features aka offline section*/
-	.hardware-img{
+	.software-img{
 		margin-right:7%;
 	}
 	 .number{
@@ -1217,25 +1339,26 @@
 	}
 	/*curation section*/
 	.curation-bullet-header{
-		margin-left:-9%;
+		margin-left:-6%;
 	}
 	.curation-img img{
 		width:115px;
 	}
 	.curation-txt{
-		padding-left:10%;
+		padding-left:5%;
 	}
-	 .cc-intro{
-		margin-left:28% !important;
+	.cc-intro{
+		margin-left:2% !important;
 	}
-	.number-cc{
-		margin-left:28% !important;
+	/*hardware*/
+	.hardware-bullet-header{
+		margin-left:-2%;
 	}
-	.number-text-cc{
-		width:220%;
-		margin-left:-55%;
+	.hardware-txt{
+		width:40%;
 	}
 }
+
 @media screen and (max-width: 325px) {
 	/*above the fold*/
  .kolibri-header-section{
@@ -1252,7 +1375,7 @@
 	.puzzle-bullet-header{
 		width:120%;
 	}
-	.hardware-img{
+	.software-img{
 		margin-right:9%;
 	}
 	#mc-embedded-subscribe {
@@ -1269,19 +1392,25 @@
 	}
 	/*curation section*/
 	.curation-bullet-header{
-		margin-left:-6%;
+		margin-left:-3%;
 	}
 	.curation-txt{
-		padding-left:12%;
+		padding-left:4%;
+		padding-top:2%;
 	}
-	 .cc-intro{
-		margin-left:32% !important;
+	.number-cc{
+		margin-left:-20% !important;
 	}
 	.number-text-cc{
-		width:250%;
-		margin-left:-50%;
+		width:370%;
+		margin-left:-170%;
+		margin-bottom:20%;
+	}
+	.hardware-bullet-header{
+		margin-left:1%;
 	}
 }
+
 @media (max-width:280px){
 	.fle-header-top, .fle-header-bottom{
 		font-size:10px;
@@ -1291,31 +1420,37 @@
 		margin-bottom:-1px;
 	}
 	/*puzzle piece headers for all sections*/
-	.bullet-img img, .hardware-img img, .curation-img img{
-		width:75px;
+	.bullet-img img, .software-img img{
+		width:85px;
 	}
-	.bullet-txt h1, .hardware-txt h1, .curation-txt h1{
+	.bullet-txt h1, .software-txt h1, .curation-txt h1, .hardware-txt h1{
 		font-size: 18px;
 	}
-	.bullet-txt h3, .hardware-txt h3, .curation-txt h3{
+	.bullet-txt h3, .software-txt h3, .curation-txt h3, .hardware-txt h3{
 		font-size: 12px;
 	}
+	.bullet-txt{
+		margin-left:-20%;
+	}
 	/*features section*/
-	.hardware-img{
+	.software-img{
 		margin-right:6%;
 	}
-	.hardware-txt{
+	.software-txt{
 		margin-top:-4%;
 	}
 	/*curation section*/
 	.curation-bullet-header{
-		margin-left:-12%;
+		margin-left:-4%;
+	}
+	.curation-img img{
+		width:95px;
 	}
 	.curation-txt{
-		padding-left:17%;
+		left:-4%;
 	}
 	 .cc-intro{
-		margin-left:5% !important;
+		margin-left:2% !important;
 		width:90%;
 	}
 	.number-cc {
@@ -1323,9 +1458,16 @@
 	}
 	.number-text-cc{
 		width:500%;
-		margin-left:-260%;
+		margin-left:-270%;
+	}
+	.hardware-img img{
+		width:105px;
+	}
+	.hardware-bullet-header{
+		margin-left:-2%;
 	}
 }
+
 @media (max-width:270px){
 	.intro-heading{
 		font-size:30px;

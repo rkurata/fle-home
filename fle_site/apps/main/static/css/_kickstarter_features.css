@@ -7,18 +7,16 @@
   margin-top:8%;
   margin-bottom:20%;
 }
-.hardware-bullet-header{
+.software-bullet-header{
   margin-bottom:5%;
 }
-.hardware-img img{
-  width:141px;
+.software-img img{
   margin-left:6%;
 }
-.hardware-txt{
-  margin-left:-20.5%;
-  margin-top:-1.2%;
+.software-txt{
+  margin-left:-18%;
 }
-.hardware-txt h3{
+.software-txt h3{
   margin-top:-5px;
 }
 #feature-container #tile-container {

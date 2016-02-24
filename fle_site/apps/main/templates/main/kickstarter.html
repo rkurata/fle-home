@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{% static 'css/_kickstarter_quote.css' %}">
     <link rel="stylesheet" href="{% static 'css/_kickstarter_mobile.css' %}?asdfghjkl">
     <link rel="stylesheet" href="{% static 'css/_kickstarter_cc.css' %}">
+    <link rel="stylesheet" href="{% static 'css/_kickstarter_hardware.css' %}">
 
     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
      <!-- Bootstrap -->
@@ -156,6 +157,10 @@
             {% include "main/partials/_kickstarter_cc.html" %}
         </section>
 
+        <section id="hardware" class="row">
+            {% include "main/partials/_kickstarter_hardware.html" %}
+        </section>
+
         <!-- FLE History Section -->
         <section id="fle_timeline" class="row">
             <center class="fle_title">
@@ -209,6 +214,14 @@
             new WOW().init();
         </script>
 
+        <!--card flip in hardware section-->
+          <script>
+            $('.flip').on('click', function() {
+                var $card = $(this).find('.card');
+                if($card.hasClass('flipped')) $card.removeClass('flipped');
+                else $card.addClass('flipped');
+            });
+        </script>
         <!-- Smooth scrolling and back to top button -->
         <script>
             $(document).ready(function() {
