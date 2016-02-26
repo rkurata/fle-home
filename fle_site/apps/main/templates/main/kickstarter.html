@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="{% static 'css/_kickstarter_mobile.css' %}?asdfghjkl">
     <link rel="stylesheet" href="{% static 'css/_kickstarter_cc.css' %}">
     <link rel="stylesheet" href="{% static 'css/_kickstarter_hardware.css' %}">
+    <link rel="stylesheet" href="{% static 'css/_kickstarter_learners.css' %}">
 
     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
      <!-- Bootstrap -->
@@ -161,6 +162,10 @@
             {% include "main/partials/_kickstarter_hardware.html" %}
         </section>
 
+        <section id="learners" class="row">
+            {% include "main/partials/_kickstarter_learners.html" %}
+        </section>
+
         <!-- FLE History Section -->
         <section id="fle_timeline" class="row">
             <center class="fle_title">
@@ -222,6 +227,7 @@
                 else $card.addClass('flipped');
             });
         </script>
+
         <!-- Smooth scrolling and back to top button -->
         <script>
             $(document).ready(function() {
@@ -252,11 +258,6 @@
                 }, 900);
                 return false;
             });
-
-            // Determines when sticky signup bar becomes... sticky
-            // $(function() {
-            //     $('.sticky-signup').attr("data-offset-top", $('#kickstarter-header').outerHeight() - 120);
-            // });
 
             // Adds a countdown timer to release day
             FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
@@ -316,8 +317,6 @@
             });
 
         </script>
-
-        <!-- // <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script> -->
 
         <!-- Google Analytics tracking -->
         <script>

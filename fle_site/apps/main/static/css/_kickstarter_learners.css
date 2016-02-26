@@ -1,0 +1,31 @@
+#learners {
+  display: block;
+  width: 100%;
+  padding-top:5%;
+  margin-top:-26%;
+  margin-bottom:3%
+}
+.learners-bullet-header{
+  width:150%;
+  margin-bottom:8%;
+}
+.learners-img img{
+  float:right;
+  margin-top:4px;
+  padding-right:15%;
+}
+.learners-txt{
+  color:#000;
+  text-align:left;
+  margin-left:-5%;
+  margin-top:-.5%;
+}
+.learners-row{
+  margin-left:5%;
+}
+.learners-icons{
+  margin-bottom:4%;
+}
+.learners-icons p{
+  font-size:18px;
+}
