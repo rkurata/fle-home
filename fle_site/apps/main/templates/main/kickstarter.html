@@ -19,10 +19,13 @@
     <link rel="stylesheet" href="{% static 'css/_kickstarter_cc.css' %}">
     <link rel="stylesheet" href="{% static 'css/_kickstarter_hardware.css' %}">
     <link rel="stylesheet" href="{% static 'css/_kickstarter_learners.css' %}">
+    <link rel="stylesheet" href="{% static 'css/_kickstarter_you.css' %}">
 
     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
-     <!-- Bootstrap -->
     
+     <!-- Bootstrap -->
+    <!--for social media icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.12.0/bootstrap-social.css">
    
     <!-- Custom Fonts -->
 
@@ -164,6 +167,10 @@
 
         <section id="learners" class="row">
             {% include "main/partials/_kickstarter_learners.html" %}
+        </section>
+
+         <section id="you" class="row">
+            {% include "main/partials/_kickstarter_you.html" %}
         </section>
 
         <!-- FLE History Section -->
