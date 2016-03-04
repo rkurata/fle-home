@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="{% static 'css/_kickstarter_hardware.css' %}">
     <link rel="stylesheet" href="{% static 'css/_kickstarter_learners.css' %}">
     <link rel="stylesheet" href="{% static 'css/_kickstarter_you.css' %}">
+    <link rel="stylesheet" href="{% static 'css/_kickstarter_closing.css' %}">
 
     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
     
@@ -28,9 +29,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.12.0/bootstrap-social.css">
    
     <!-- Custom Fonts -->
-
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:100,400,700' rel='stylesheet' type='text/css'>
     <style>
         #indiegogo_text {
             display: none;
@@ -82,7 +81,6 @@
                                 The offline app for universal education
                             </div>
                         </div>
-                                    <!--<span class="hidden-xs hidden-sm" style="font-weight: 100; top:-8px; position: relative;">|</span>--> 
                         <center> 
                            <div class="row fle-header-section">
                                  <div class="col-xs-6 fle-header-top">
@@ -111,11 +109,11 @@
                           
                         <div class="row intro-btn"> 
                             <center>
-                            <div class="col-md-6 col-sm-12">
+                            <div class="col-md-6 col-xs-12">
                                 <a class="btn" id="igg_btn" target="_blank" href="https://learningequality.org/r/indiegogo-redirect">Make a Donation</a>
                             </div>
 
-                            <div class="col-md-6 col-sm-12">
+                            <div class="col-md-6 col-xs-12">
                                 <a class="btn" id="igg_btn"  target="_blank" href="https://github.com/learningequality/kolibri">Follow our Progress</a>
                             </div>
                             </center>
@@ -128,10 +126,21 @@
         <!-- sticky sign up bar -->
         {% include "main/partials/_sticky_bar.html" %}
 
-        <!--<img id="slide_tablet" src="/static/img/kickstarter/tablet-min.png">-->
-
         <!-- Below the fold version 2 -->
-
+        <!-- FLE History Section -->
+        <section id="fle_timeline" class="row">
+            <center class="fle_title">
+                <h1>WHO ARE WE?</h1>
+                <h2>We're the team that built <img src="{% static 'img/kickstarter/timeline/ka-lite-logo.png' %}"></h2>
+                <h3>which has been bringing online education from Khan Academy to the offline world.</h3>
+                <h1 class="wow fadeInDown">
+                    <img src="{% static 'img/kickstarter/KA-Lite/KA-year.png' %}">
+                    <img id="ka-year" src="{% static 'img/kickstarter/KA-Lite/KA-people.png' %}">
+                    <img src="{% static 'img/kickstarter/KA-Lite/KA-160.png' %}">
+                </h1>
+            </center>
+        </section>
+<hr>
         <section id="fle_intro" class="row">
             {% include "main/partials/_kickstarter_puzzle_intro.html" %}
            <!-- {% include "main/partials/_kickstarter_intro2.html" %}-->
@@ -144,16 +153,6 @@
 
         <!-- Features Section: Tile Design -->
         <section id="fle_features" class="row">
-          <!--  <br><br><br><br><br><br>
-            <a href="#portfolioModal1" data-toggle="modal"><div class="fle_title_bold">
-                Curated Educational Content<br>
-                <p class="slim-text">
-                    Education is not "one-size fits all"
-                    <br><br>
-                    <span>Learn more</span>
-                </p>
-            </div></a>
-            <br><br><br><br><br><br>-->
             {% include "main/partials/_kickstarter_features_tiledesign.html" %}
         </section>
 
@@ -173,32 +172,8 @@
             {% include "main/partials/_kickstarter_you.html" %}
         </section>
 
-        <!-- FLE History Section -->
-        <section id="fle_timeline" class="row">
-            <center class="fle_title">
-                <h1>WHO ARE WE?</h1>
-                <h2>We're the team that built <img src="{% static 'img/kickstarter/timeline/ka-lite-logo.png' %}"></h2>
-                <h3>which has been bringing online education from Khan Academy to the offline world.</h3>
-                <h1 class="wow fadeInDown">
-                    <img src="{% static 'img/kickstarter/KA-Lite/KA-year.png' %}">
-                    <img id="ka-year" src="{% static 'img/kickstarter/KA-Lite/KA-people.png' %}">
-                    <img src="{% static 'img/kickstarter/KA-Lite/KA-160.png' %}">
-                </h1>
-            </center>
-
-            <div id="desktop-timeline"></div>
-
-        </section>
-
-        <!-- FLE Quote Section -->
-        <section id="fle_quote" class="hidden-xs">
-            {% include "main/partials/_kickstarter_quote.html" %}
-        </section>
-
-
-        <!-- Contact Section -->
-        <section id="contact" class="not-parallax-section">
-            {% include "main/partials/_kickstarter_footer.html" %}
+        <section id="closing" class="row">
+            {% include "main/partials/_kickstarter_closing.html" %}
         </section>
 
         <a href="#kickstarter-header" class="back-to-top"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
@@ -260,6 +235,12 @@
                 return false;
             });
             $('#down-arrow').click(function() {
+                $('html, body').animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top
+                }, 900);
+                return false;
+            });
+             $('.learn-more').click(function() {
                 $('html, body').animate({
                     scrollTop: $($.attr(this, 'href')).offset().top
                 }, 900);

@@ -1,0 +1,196 @@
+{% extends base_template %}
+{% load staticfiles help_text_as_placeholder %}
+
+{% block title %}Add a deployment{% endblock title %}
+
+{% block extrahead %}
+    <script type="text/javascript">
+        $(document).ready(function () {
+        // Code adapted from http://djangosnippets.org/snippets/1389/
+        function updateElementIndex(el, prefix, ndx) {
+            var id_regex = new RegExp('(' + prefix + '-\\d+-)');
+            var replacement = prefix + '-' + ndx + '-';
+            if ($(el).attr("for")) $(el).attr("for", $(el).attr("for").replace(id_regex,
+            replacement));
+            if (el.id) el.id = el.id.replace(id_regex, replacement);
+            if (el.name) el.name = el.name.replace(id_regex, replacement);
+        }
+
+        function deleteForm(btn, prefix) {
+            var formCount = parseInt($('#id_' + prefix + '-TOTAL_FORMS').val());
+            if (formCount > 1) {
+                // Delete the item/form
+                $(btn).parents('.pic-form-item').remove();
+                var forms = $('.pic-form-item'); // Get all the forms
+                // Update the total number of forms (1 less than before)
+                $('#id_' + prefix + '-TOTAL_FORMS').val(forms.length);
+                var i = 0;
+                // Go through the forms and set their indices, names and IDs
+                for (formCount = forms.length; i < formCount; i++) {
+                    $(forms.get(i)).children().children().each(function () {
+                        if ($(this).attr('type') == 'text') updateElementIndex(this, prefix, i);
+                    });
+                }
+            } // End if
+            else {
+                alert("You have to enter at least one todo item!");
+            }
+            return false;
+        }
+
+        function addForm(btn, prefix) {
+            var formCount = parseInt($('#id_' + prefix + '-TOTAL_FORMS').val());
+            console.log(formCount);
+            // You can only submit a maximum of 10 todo items
+            if (formCount < 10) {
+                // Clone a form (without event handlers) from the first form
+                var row = $(".pic-form-item:first").clone(false).get(0);
+                // Insert it after the last form
+                $(row).removeAttr('id').hide().insertAfter(".pic-form-item:last").slideDown(300);
+
+                // Remove the bits we don't want in the new row/form
+                // e.g. error messages
+                $(".errorlist", row).remove();
+                $(row).children().removeClass("error");
+
+                // Relabel or rename all the relevant bits
+                $(row).children().children().each(function () {
+                    updateElementIndex(this, prefix, formCount);
+                    $(this).val("");
+                });
+
+                // Add an event handler for the delete item/form link
+                $(row).find(".delete").click(function () {
+                    return deleteForm(this, prefix);
+                });
+                // Update the total form count
+                $("#id_" + prefix + "-TOTAL_FORMS").val(formCount + 1);
+            } // End if
+            else {
+                alert("Sorry, you can only enter a maximum of ten items.");
+            }
+            return false;
+        }
+        // Register the click event handlers
+        $("#add").click(function () {
+            return addForm(this, "form");
+        });
+
+        $(".delete").click(function () {
+            return deleteForm(this, "form");
+        });
+
+        $("#submit-story-div input").click(function () {
+            $(this).hide();
+            $('#form-submitted').show();
+            $('#deployment-story-form').submit();
+        })
+    });
+    </script>
+{% endblock extrahead %}
+
+{% block bodycontents %}
+<div class="container">
+    <div class="col-sm-12">
+
+        {{ deployment_form.non_field_errors }}
+
+        <form action="." id="deployment-story-form" enctype="multipart/form-data" method="POST" class="form-horizontal" role="form">
+            {% csrf_token %}
+
+            <div class="form-group">
+                <h2>Please tell us more about your deployment!</h2>
+                {% if deployment_form.errors %}
+                    <p class="text-danger">
+                        Please correct the errors below.
+                    </p>
+                {% endif %}
+            </div>
+
+            <h3>Required fields</h3><br/>
+
+            {% for field in deployment_form %}
+
+                {% if field.name == "testimonials" %}
+                <h3>Optional fields</h3><br/>
+                {% endif %}
+
+                <div class="form-group{% if field.errors %} has-error{% endif %}">
+
+                    <div class="col-sm-2 control-label">
+                        {{ field.label_tag }}{% if field.field.required %} *{% endif %}
+                    </div>
+                    <div class="col-sm-10">
+                        {{ field|help_text_as_placeholder }}
+                        {% for error in field.errors %}
+                            <div class="help-block">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+
+            <div class="form-group">
+                <div class="col-sm-2 control-label">
+                (* = required field)
+                </div>
+                <div class="col-sm-10 text-center">
+                </div>
+            </div>
+
+            <h3>Upload photos!</h3><br/>
+
+            <p>We love seeing your photos, and we love <a target="_blank" href="{% url "map" %}">sharing them on the map</a> even more! If you have stories or videos, etc, that you can't submit with this form, please email them to <a href="stories@learningequality.org">stories@learningequality.org</a> instead.</p>
+
+            {{ photo_formset.management_form }}
+
+            {% for form in photo_formset.forms %}
+                {% for field in form.hidden_fields %}
+                    {{ field }}
+                {% endfor %}
+                <div class="form-group pic-form-item">
+
+                        <div class="col-sm-3{% if form.picture.errors %} has-error{% endif %}">
+                            {{ form.picture }}
+                            {% for error in form.picture.errors %}
+                                <div class="help-block">{{ error }}</div>
+                            {% endfor %}
+                        </div>
+
+                        <div class="col-sm-8{% if form.caption.errors %} has-error{% endif %}">
+                            {{ form.caption }}
+                            {% for error in form.caption.errors %}
+                                <div class="help-block">{{ error }}</div>
+                            {% endfor %}
+                        </div>
+
+                        <div class="col-sm-1">
+                            <a class="delete" href="#">Delete</a>
+                        </div>
+
+                </div>
+            {% endfor %}
+            <p><a id="add" href="#">Add another photo</a></p>
+
+            <br/>
+
+            <p><i>By submitting photos and stories with this form, you grant Learning Equality permission to use these materials on its map, blog, homepage, or other channels.</i></p>
+
+            <br/>
+
+            <div class="form-group">
+                <div id="submit-story-div" class="col-sm-12 text-center">
+                    <input type="submit" value="Submit deployment story!" class="btn btn-info" />
+                    <div id="form-submitted">
+                        <img id='loading-gif' src='{% static 'img/ka-lite/loading.gif' %}'>
+                        <p>
+                            Please wait, upload in progress... This may take a few minutes depending on the number of pictures you have submitted and the speed of your Internet connection.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+{% endblock bodycontents %}

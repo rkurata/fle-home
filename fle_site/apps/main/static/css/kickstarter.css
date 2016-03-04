@@ -73,7 +73,8 @@ input {
   overflow: auto;
   position: relative;
   z-index: 2;
-  background: white;
+  position: relative;
+  z-index: 2;
 }
 #fle_timeline .fle_title h1 {
   font-size: 47px;
@@ -121,10 +122,6 @@ a:hover {
   font-family: "Montserrat";
   font-size: 30px;
   max-width: 1000px;
-}
-#fle_timeline {
-  position: relative;
-  z-index: 2;
 }
 .countdown {
   -moz-transform: scale(0.8);
@@ -432,6 +429,7 @@ header {
 .intro-btn{
   max-width:580px;
   margin:auto;
+  margin-top:5%;
 }
 
 #header-mailchimp {
