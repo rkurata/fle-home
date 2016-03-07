@@ -111,7 +111,7 @@
 
             {% for field in deployment_form %}
 
-                {% if field.name == "testimonials" %}
+                {% if field.name == "organization_url" %}
                 <h3>Optional fields</h3><br/>
                 {% endif %}
 
@@ -137,45 +137,7 @@
                 </div>
             </div>
 
-            <h3>Upload photos!</h3><br/>
-
-            <p>We love seeing your photos, and we love <a target="_blank" href="{% url "map" %}">sharing them on the map</a> even more! If you have stories or videos, etc, that you can't submit with this form, please email them to <a href="stories@learningequality.org">stories@learningequality.org</a> instead.</p>
-
-            {{ photo_formset.management_form }}
-
-            {% for form in photo_formset.forms %}
-                {% for field in form.hidden_fields %}
-                    {{ field }}
-                {% endfor %}
-                <div class="form-group pic-form-item">
-
-                        <div class="col-sm-3{% if form.picture.errors %} has-error{% endif %}">
-                            {{ form.picture }}
-                            {% for error in form.picture.errors %}
-                                <div class="help-block">{{ error }}</div>
-                            {% endfor %}
-                        </div>
-
-                        <div class="col-sm-8{% if form.caption.errors %} has-error{% endif %}">
-                            {{ form.caption }}
-                            {% for error in form.caption.errors %}
-                                <div class="help-block">{{ error }}</div>
-                            {% endfor %}
-                        </div>
-
-                        <div class="col-sm-1">
-                            <a class="delete" href="#">Delete</a>
-                        </div>
-
-                </div>
-            {% endfor %}
-            <p><a id="add" href="#">Add another photo</a></p>
-
-            <br/>
-
-            <p><i>By submitting photos and stories with this form, you grant Learning Equality permission to use these materials on its map, blog, homepage, or other channels.</i></p>
-
-            <br/>
+                    
 
             <div class="form-group">
                 <div id="submit-story-div" class="col-sm-12 text-center">

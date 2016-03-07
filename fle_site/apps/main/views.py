@@ -15,6 +15,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 from annoying.decorators import render_to
 from constantcontact import ConstantContact, Contact
+from .forms import KolibriDeploymentForm
 
 class JsonResponse(HttpResponse):
     """Wrapper class for generating a HTTP response with JSON data"""
@@ -45,6 +46,7 @@ def kolibri(request):
         created_at - timestamp of donation
         amount - amount of donation (if private, this will be None)
     """
+   
     try:
         summary_info = json.load(open(os.path.join(settings.INDIEGOGO_API_DATA_LOCATION, "summary.json"), "r"))
     except IOError:
@@ -61,8 +63,28 @@ def kolibri(request):
 
     return {
         "summary_info": json.dumps(summary_info),
-        "all_contributors": json.dumps(all_contributors)
+        "all_contributors": json.dumps(all_contributors),
     }
+
+
+@render_to("main/_deploy-form.html")
+def kolibriDeployForm(request):
+    if request.method == "POST":
+        deployment_form = KolibriDeploymentForm(request.POST)
+        if deployment_form.is_valid():
+
+            deployment_form.save()
+
+            return HttpResponseRedirect(reverse("map_add_thankyou"))
+    else:
+        deployment_form = KolibriDeploymentForm()
+
+        
+        return {
+            'deployment_form': deployment_form,
+        }
+
+
 
 
 @csrf_exempt

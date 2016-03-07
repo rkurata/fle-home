@@ -4,7 +4,7 @@ from django.core.urlresolvers import reverse, reverse_lazy
 from django.views.generic import TemplateView, RedirectView
 from django.http import HttpResponseRedirect
 
-from .views import process_donation, file_upload, cc_indiegogo_signup, kolibri
+from .views import process_donation, file_upload, cc_indiegogo_signup, kolibri, kolibriDeployForm
 
 urlpatterns = patterns(__package__ + '.views',
     url(r'^$', TemplateView.as_view(template_name='main/homepage.html'), name='home'),
@@ -19,4 +19,6 @@ urlpatterns = patterns(__package__ + '.views',
     url(r'^directions/$', TemplateView.as_view(template_name='main/directions.html'), name='directions'),
     url(r'^mailchimp/$', TemplateView.as_view(template_name='main/partials/_kickstarter_mailchimp.html'), name='mailchimp'),
     url(r'^fileupload/$', file_upload, name='file_upload'),
+    url(r'^kolibri/deployForm/$', kolibriDeployForm, name='kolibriDeployForm'),
+
 )
