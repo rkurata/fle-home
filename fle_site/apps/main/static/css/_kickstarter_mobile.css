@@ -49,6 +49,23 @@
 	.closing-intro-bottom{
 		margin-top:3%;
 	}
+	/*video player above-the-fold*/
+	.video-row{
+	  display:block;
+	  margin-left:auto;
+	  margin-right:auto;
+	  width:570px;
+	  height:330px;
+	}
+	.videoWrapper{
+	  width:570px;
+	  height:330px;
+	}
+	#k_video{
+	  width:100%;
+	  height:100%;
+	}
+/*-------end video player-----*/
 }
 
 @media(max-width:1440px){
@@ -105,6 +122,23 @@
 	.closing-intro-bottom{
 		margin-top:3%;
 	}
+	/*video player above-the-fold*/
+	.video-row{
+	  display:block;
+	  margin-left:auto;
+	  margin-right:auto;
+	  width:570px;
+	  height:330px;
+	}
+	.videoWrapper{
+	  width:570px;
+	  height:330px;
+	}
+	#k_video{
+	  width:100%;
+	  height:100%;
+	}
+/*-------end video player-----*/
 }
 @media screen and (max-width: 1281px) {
 	.top-box img,
