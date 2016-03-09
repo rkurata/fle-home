@@ -6,7 +6,8 @@
   margin-bottom:3%;
 }
 .learners-bullet-header{
-  width:150%;
+  width:100%;
+  overflow:hidden;
   margin-bottom:8%;
 }
 .learners-img img{

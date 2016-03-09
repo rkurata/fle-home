@@ -365,6 +365,10 @@ header {
 
 .kolibri-header-section{
   width:45%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
 }
 
 /*span.hidden-xs.hidden-sm {
@@ -373,7 +377,7 @@ header {
 
 /*the offline app for universal education*/
 .intro-heading2 {
-  color: black;
+  color: #000;
   z-index: -1;
   font-size: 22px;
   font-family: "Open Sans";

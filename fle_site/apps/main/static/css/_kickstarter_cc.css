@@ -7,9 +7,7 @@
 .cc-section p{
   font-size:20px;
 }
-.curation-bullet-header{
-  width:150%;
-}
+
 .curation-img img{
   float:right;
   margin-top:4px;
@@ -22,10 +20,10 @@
   margin-top:-.5%;
 }
 .cc-intro{
-  width:;
   margin-left:16.5%;
   margin-top:2.5%;
   margin-bottom:2%;
+  max-width:100%;
 }
 .numbers-cc{
   padding:0 90px;
